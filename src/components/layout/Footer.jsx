@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full h-auto py-[40px]">
-        <div className="w-[980px] h-auto mx-auto text-gray-400  border-gray-400 border-b-[1px]">
+        <div className="w-full max-w-[980px] h-auto mx-auto text-gray-400  border-gray-400 border-b-[1px] px-4 text-xs">
         <p className="text-justify pb-[10px]">
           1. Trade‑in values will vary based on the condition, year, and
           configuration of your eligible trade‑in device. Not all devices are
@@ -45,7 +45,7 @@ export default function Footer() {
          Features are subject to change. Some features, applications, and services may not be available in all regions or all languages.
         </p>
         </div>
-        <div className="w-[980px] mx-auto pt-[10px] px-6 grid grid-cols-5 gap-10">
+        <div className="w-full max-w-[980px] mx-auto pt-[10px] px-4 grid grid-cols-3 min-[830px]:grid-cols-5 gap-10 text-xs">
             {/* Column 1 */}
         <div className="pt-[10px]">
           <h4 className="font-semibold text-gray-900 mb-3">Shop and Learn</h4>
@@ -147,10 +147,10 @@ export default function Footer() {
         </div>
 
         </div>
-        <div className="w-[980px] h-auto mx-auto text-gray-400 py-[10px]  border-gray-400 border-b-[1px]">
+        <div className="w-full max-w-[980px] h-auto mx-auto text-gray-400 py-[10px] border-gray-400 border-b-[1px] px-4 text-xs">
             <p className="text-justify">More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE (1-800-692-7753).</p>
         </div>
-        <div className="w-[980px] h-auto mx-auto text-gray-400 py-[10px]  ">
+        <div className="w-full max-w-[980px] h-auto mx-auto text-gray-400 py-[10px] px-4 text-xs">
             <p className="text-justify">Copyright © 2025 Apple Inc. All rights reserved.Privacy Policy Terms of Use Sales and Refunds Legal Site Map</p>
         </div>
       </div>

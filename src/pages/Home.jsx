@@ -35,11 +35,11 @@ const Home = () => {
         />
 
         <div className="relative z-10 flex flex-col items-center text-center pt-[40px] px-6">
-          <h1 className="text-[50px] md:text-[60px]  text-black/90 mb-2  tracking-tight">
+          <h1 className="text-[32px] min-[830px]:text-[60px] leading-tight text-black/90 mb-2 tracking-tight">
             Wrapping up this special season.
           </h1>
 
-          <p className="text-[22px] md:text-[24px] font-light text-black/80 mb-2 max-w-[600px]">
+          <p className="text-[22px] min-[830px]:text-[24px] font-light text-black/80 mb-2 max-w-[600px]">
             There’s still time to make their holiday one of a kind.
           </p>
 
@@ -62,7 +62,7 @@ const Home = () => {
       {/* 2*/}
       <div className="w-full h-[697px] mx-auto  bg-[url('/assets/image/10025.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             iPhone
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -97,7 +97,7 @@ const Home = () => {
       {/* 3*/}
       <div className="w-full h-[697px] mx-auto  bg-[url('/assets/image/10026.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             AirPods Pro 3
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -130,10 +130,10 @@ const Home = () => {
         </div>
       </div>
       {/* 4 Grid col2 row3*/}
-      <div className="w-full h-[1780px] mb-3 grid grid-cols-2 grid-rows-[repeat(3,580px)] mb-3 gap-[20px]">
+      <div className="w-full h-auto mb-3 grid grid-cols-1 min-[830px]:grid-cols-2 min-[830px]:grid-rows-[repeat(3,580px)] auto-rows-[500px] gap-[10px] min-[830px]:gap-[20px]">
         <div className="w-full h-full mx-auto  bg-[url('/assets/image/10029.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             Apple Gift Card
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -167,7 +167,7 @@ const Home = () => {
       </div>
       <div className="w-full h-full mx-auto  bg-[url('/assets/image/10031.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             iPad Air
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -201,7 +201,7 @@ const Home = () => {
       </div>
       <div className="w-full h-full mx-auto  bg-[url('/assets/image/10032.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             Apple Watch Series 11
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -235,7 +235,7 @@ const Home = () => {
       </div>
       <div className="w-full h-full mx-auto  bg-[url('/assets/image/10033.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             Ipad
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -269,7 +269,7 @@ const Home = () => {
       </div>
       <div className="w-full h-full mx-auto  bg-[url('/assets/image/10036.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             Apple Trade In
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -303,7 +303,7 @@ const Home = () => {
       </div>
       <div className="w-full h-full mx-auto  bg-[url('/assets/image/10037.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             Apple Card
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -337,7 +337,7 @@ const Home = () => {
       </div>
       </div>
       {/* SLide */}
-      <div className="w-full h-[1080px] mb-3 ">
+      <div className="w-full h-auto mb-3 ">
             <EntertainmentSection />
       </div>
     </div>
