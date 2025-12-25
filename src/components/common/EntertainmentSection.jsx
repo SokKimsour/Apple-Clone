@@ -81,17 +81,10 @@ const EntertainmentSection = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <section className="bg-[#f5f5f7] my-24 overflow-hidden">
-      {/* Title */}
-      <h2 className="text-center text-4xl md:text-5xl font-semibold mb-16 py-[40px]">
-        Endless entertainment.
-=======
     <section className="bg-[#f5f5f7] py-10 min-[830px]:py-24 overflow-hidden">
       {/* Title */}
       <h2 className="text-center text-2xl min-[830px]:text-5xl font-semibold mb-8 min-[830px]:mb-16 py-[20px] min-[830px]:py-[40px]">
-       Endless entertainment.
->>>>>>> 8a03125413a061b093e8be59016412d901beea10
+        Endless entertainment.
       </h2>
 
       {/* Top row */}
