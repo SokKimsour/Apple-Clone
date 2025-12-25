@@ -90,7 +90,7 @@ const Home = () => {
           </div>
         </div>
 
-    
+
         <div className="mt-auto w-full flex justify-center">
         </div>
       </div>
@@ -125,167 +125,31 @@ const Home = () => {
           </div>
         </div>
 
-    
+
         <div className="mt-auto w-full flex justify-center">
         </div>
       </div>
       {/* 4 Grid col2 row3*/}
       <div className="w-full h-[1780px] mb-3 grid grid-cols-2 grid-rows-[repeat(3,580px)] mb-3 gap-[20px]">
         <div className="w-full h-full mx-auto  bg-[url('/assets/image/10029.jpg')] bg-cover bg-center bg-no-repeat mb-3">
-        <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
-            Apple Gift Card
-          </h1>
-          <p className="text-2xl font-normal text-black/90 mb-[15px]">
-            Let them spend the holidays however they like.
-          </p>
-          <div className=" flex gap-[18px] justify-center">
-           <button className="inline-flex items-center justify-center
+          <div className="text-center pt-[20px] z-10">
+            <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+              Apple Gift Card
+            </h1>
+            <p className="text-2xl font-normal text-black/90 mb-[15px]">
+              Let them spend the holidays however they like.
+            </p>
+            <div className=" flex gap-[18px] justify-center">
+              <button className="inline-flex items-center justify-center
               px-[18px] py-[8px]
               bg-[#0071e3] hover:bg-[#0077ed]
               text-white text-[15px]
               rounded-full
               transition-colors duration-200
               focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-              Learn more
-            </button>
-            <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-              Buy
-            </button>
-          </div>
-        </div>
-
-    
-        <div className="mt-auto w-full flex justify-center">
-        </div>
-      </div>
-      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10031.jpg')] bg-cover bg-center bg-no-repeat mb-3">
-        <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
-            iPad Air
-          </h1>
-          <p className="text-2xl font-normal text-black/90 mb-[15px]">
-           Now supercharged by the M3 chip.
-          </p>
-          <div className=" flex gap-[18px] justify-center">
-           <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-              Learn more
-            </button>
-            <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-              Buy
-            </button>
-          </div>
-        </div>
-
-    
-        <div className="mt-auto w-full flex justify-center">
-        </div>
-      </div>
-      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10032.jpg')] bg-cover bg-center bg-no-repeat mb-3">
-        <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
-            Apple Watch Series 11
-          </h1>
-          <p className="text-2xl font-normal text-black/90 mb-[15px]">
-            The ultimate way to watch your health.
-          </p>
-          <div className=" flex gap-[18px] justify-center">
-           <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-              Learn more
-            </button>
-            <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-            Buy
-            </button>
-          </div>
-        </div>
-
-    
-        <div className="mt-auto w-full flex justify-center">
-        </div>
-      </div>
-      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10033.jpg')] bg-cover bg-center bg-no-repeat mb-3">
-        <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
-            Ipad
-          </h1>
-          <p className="text-2xl font-normal text-black/90 mb-[15px]">
-            Now with the speed of the A16 chip and double the starting storage.
-          </p>
-          <div className=" flex gap-[18px] justify-center">
-           <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-              Learn more
-            </button>
-            <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-            Buy
-            </button>
-          </div>
-        </div>
-
-    
-        <div className="mt-auto w-full flex justify-center">
-        </div>
-      </div>
-      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10036.jpg')] bg-cover bg-center bg-no-repeat mb-3">
-        <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
-            Apple Trade In
-          </h1>
-          <p className="text-2xl font-normal text-black/90 mb-[15px]">
-            Get up to $180–$670 in credit when you trade in iPhone 13 or higher.
-          </p>
-          <div className=" flex gap-[18px] justify-center">
-           <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-              Learn more
-            </button>
-            <button className="inline-flex items-center justify-center
+                Learn more
+              </button>
+              <button className="inline-flex items-center justify-center
               px-[18px] py-[8px]
             hover:bg-[#0077ed]
               text-[#0071e3] text-[15px]
@@ -293,52 +157,188 @@ const Home = () => {
               transition-colors duration-200
               border border-[#0071e3]">
                 Buy
-            </button>
+              </button>
+            </div>
+          </div>
+
+
+          <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
-
-    
-        <div className="mt-auto w-full flex justify-center">
-        </div>
-      </div>
-      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10037.jpg')] bg-cover bg-center bg-no-repeat mb-3">
-        <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
-            Apple Card
-          </h1>
-          <p className="text-2xl font-normal text-black/90 mb-[15px]">
-            Get up to 3% Daily Cash back with every purchase.
-          </p>
-          <div className=" flex gap-[18px] justify-center">
-           <button className="inline-flex items-center justify-center
+        <div className="w-full h-full mx-auto  bg-[url('/assets/image/10031.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+          <div className="text-center pt-[20px] z-10">
+            <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+              iPad Air
+            </h1>
+            <p className="text-2xl font-normal text-black/90 mb-[15px]">
+              Now supercharged by the M3 chip.
+            </p>
+            <div className=" flex gap-[18px] justify-center">
+              <button className="inline-flex items-center justify-center
               px-[18px] py-[8px]
               bg-[#0071e3] hover:bg-[#0077ed]
               text-white text-[15px]
               rounded-full
               transition-colors duration-200
               focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-              Learn more
-            </button>
-            <button className="inline-flex items-center justify-center
+                Learn more
+              </button>
+              <button className="inline-flex items-center justify-center
               px-[18px] py-[8px]
             hover:bg-[#0077ed]
               text-[#0071e3] text-[15px]
               rounded-full
               transition-colors duration-200
               border border-[#0071e3]">
-            Buy
-            </button>
+                Buy
+              </button>
+            </div>
+          </div>
+
+
+          <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
+        <div className="w-full h-full mx-auto  bg-[url('/assets/image/10032.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+          <div className="text-center pt-[20px] z-10">
+            <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+              Apple Watch Series 11
+            </h1>
+            <p className="text-2xl font-normal text-black/90 mb-[15px]">
+              The ultimate way to watch your health.
+            </p>
+            <div className=" flex gap-[18px] justify-center">
+              <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+              bg-[#0071e3] hover:bg-[#0077ed]
+              text-white text-[15px]
+              rounded-full
+              transition-colors duration-200
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+                Learn more
+              </button>
+              <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+            hover:bg-[#0077ed]
+              text-[#0071e3] text-[15px]
+              rounded-full
+              transition-colors duration-200
+              border border-[#0071e3]">
+                Buy
+              </button>
+            </div>
+          </div>
 
-    
-        <div className="mt-auto w-full flex justify-center">
+
+          <div className="mt-auto w-full flex justify-center">
+          </div>
+        </div>
+        <div className="w-full h-full mx-auto  bg-[url('/assets/image/10033.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+          <div className="text-center pt-[20px] z-10">
+            <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+              Ipad
+            </h1>
+            <p className="text-2xl font-normal text-black/90 mb-[15px]">
+              Now with the speed of the A16 chip and double the starting storage.
+            </p>
+            <div className=" flex gap-[18px] justify-center">
+              <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+              bg-[#0071e3] hover:bg-[#0077ed]
+              text-white text-[15px]
+              rounded-full
+              transition-colors duration-200
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+                Learn more
+              </button>
+              <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+            hover:bg-[#0077ed]
+              text-[#0071e3] text-[15px]
+              rounded-full
+              transition-colors duration-200
+              border border-[#0071e3]">
+                Buy
+              </button>
+            </div>
+          </div>
+
+
+          <div className="mt-auto w-full flex justify-center">
+          </div>
+        </div>
+        <div className="w-full h-full mx-auto  bg-[url('/assets/image/10036.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+          <div className="text-center pt-[20px] z-10">
+            <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+              Apple Trade In
+            </h1>
+            <p className="text-2xl font-normal text-black/90 mb-[15px]">
+              Get up to $180–$670 in credit when you trade in iPhone 13 or higher.
+            </p>
+            <div className=" flex gap-[18px] justify-center">
+              <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+              bg-[#0071e3] hover:bg-[#0077ed]
+              text-white text-[15px]
+              rounded-full
+              transition-colors duration-200
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+                Learn more
+              </button>
+              <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+            hover:bg-[#0077ed]
+              text-[#0071e3] text-[15px]
+              rounded-full
+              transition-colors duration-200
+              border border-[#0071e3]">
+                Buy
+              </button>
+            </div>
+          </div>
+
+
+          <div className="mt-auto w-full flex justify-center">
+          </div>
+        </div>
+        <div className="w-full h-full mx-auto  bg-[url('/assets/image/10037.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+          <div className="text-center pt-[20px] z-10">
+            <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+              Apple Card
+            </h1>
+            <p className="text-2xl font-normal text-black/90 mb-[15px]">
+              Get up to 3% Daily Cash back with every purchase.
+            </p>
+            <div className=" flex gap-[18px] justify-center">
+              <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+              bg-[#0071e3] hover:bg-[#0077ed]
+              text-white text-[15px]
+              rounded-full
+              transition-colors duration-200
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+                Learn more
+              </button>
+              <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+            hover:bg-[#0077ed]
+              text-[#0071e3] text-[15px]
+              rounded-full
+              transition-colors duration-200
+              border border-[#0071e3]">
+                Buy
+              </button>
+            </div>
+          </div>
+
+
+          <div className="mt-auto w-full flex justify-center">
+          </div>
         </div>
       </div>
-      </div>
       {/* SLide */}
-      <div className="w-full h-[1080px] mb-3 ">
-            <EntertainmentSection />
+      <div className="w-full h-auto mb-3 ">
+        <EntertainmentSection />
       </div>
     </div>
   );
