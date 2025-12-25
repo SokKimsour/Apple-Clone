@@ -35,11 +35,11 @@ const Home = () => {
         />
 
         <div className="relative z-10 flex flex-col items-center text-center pt-[40px] px-6">
-          <h1 className="text-[50px] md:text-[60px]  text-black/90 mb-2  tracking-tight">
+          <h1 className="text-[32px] min-[830px]:text-[60px] leading-tight text-black/90 mb-2 tracking-tight">
             Wrapping up this special season.
           </h1>
 
-          <p className="text-[22px] md:text-[24px] font-light text-black/80 mb-2 max-w-[600px]">
+          <p className="text-[22px] min-[830px]:text-[24px] font-light text-black/80 mb-2 max-w-[600px]">
             There’s still time to make their holiday one of a kind.
           </p>
 
@@ -62,7 +62,7 @@ const Home = () => {
       {/* 2*/}
       <div className="w-full h-[697px] mx-auto  bg-[url('/assets/image/10025.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             iPhone
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -97,7 +97,7 @@ const Home = () => {
       {/* 3*/}
       <div className="w-full h-[697px] mx-auto  bg-[url('/assets/image/10026.jpg')] bg-cover bg-center bg-no-repeat mb-3">
         <div className="text-center pt-[20px] z-10">
-          <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             AirPods Pro 3
           </h1>
           <p className="text-2xl font-normal text-black/90 mb-[15px]">
@@ -130,8 +130,9 @@ const Home = () => {
         </div>
       </div>
       {/* 4 Grid col2 row3*/}
-      <div className="w-full h-[1780px] mb-3 grid grid-cols-2 grid-rows-[repeat(3,580px)] mb-3 gap-[20px]">
+      <div className="w-full h-auto mb-3 grid grid-cols-1 min-[830px]:grid-cols-2 min-[830px]:grid-rows-[repeat(3,580px)] auto-rows-[500px] gap-[10px] min-[830px]:gap-[20px]">
         <div className="w-full h-full mx-auto  bg-[url('/assets/image/10029.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+<<<<<<< HEAD
           <div className="text-center pt-[20px] z-10">
             <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
               Apple Gift Card
@@ -141,15 +142,168 @@ const Home = () => {
             </p>
             <div className=" flex gap-[18px] justify-center">
               <button className="inline-flex items-center justify-center
+=======
+        <div className="text-center pt-[20px] z-10">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
+            Apple Gift Card
+          </h1>
+          <p className="text-2xl font-normal text-black/90 mb-[15px]">
+            Let them spend the holidays however they like.
+          </p>
+          <div className=" flex gap-[18px] justify-center">
+           <button className="inline-flex items-center justify-center
+>>>>>>> 8a03125413a061b093e8be59016412d901beea10
               px-[18px] py-[8px]
               bg-[#0071e3] hover:bg-[#0077ed]
               text-white text-[15px]
               rounded-full
               transition-colors duration-200
               focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+<<<<<<< HEAD
                 Learn more
               </button>
               <button className="inline-flex items-center justify-center
+=======
+              Learn more
+            </button>
+            <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+            hover:bg-[#0077ed]
+              text-[#0071e3] text-[15px]
+              rounded-full
+              transition-colors duration-200
+              border border-[#0071e3]">
+              Buy
+            </button>
+          </div>
+        </div>
+
+    
+        <div className="mt-auto w-full flex justify-center">
+        </div>
+      </div>
+      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10031.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div className="text-center pt-[20px] z-10">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
+            iPad Air
+          </h1>
+          <p className="text-2xl font-normal text-black/90 mb-[15px]">
+           Now supercharged by the M3 chip.
+          </p>
+          <div className=" flex gap-[18px] justify-center">
+           <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+              bg-[#0071e3] hover:bg-[#0077ed]
+              text-white text-[15px]
+              rounded-full
+              transition-colors duration-200
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+              Learn more
+            </button>
+            <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+            hover:bg-[#0077ed]
+              text-[#0071e3] text-[15px]
+              rounded-full
+              transition-colors duration-200
+              border border-[#0071e3]">
+              Buy
+            </button>
+          </div>
+        </div>
+
+    
+        <div className="mt-auto w-full flex justify-center">
+        </div>
+      </div>
+      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10032.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div className="text-center pt-[20px] z-10">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
+            Apple Watch Series 11
+          </h1>
+          <p className="text-2xl font-normal text-black/90 mb-[15px]">
+            The ultimate way to watch your health.
+          </p>
+          <div className=" flex gap-[18px] justify-center">
+           <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+              bg-[#0071e3] hover:bg-[#0077ed]
+              text-white text-[15px]
+              rounded-full
+              transition-colors duration-200
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+              Learn more
+            </button>
+            <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+            hover:bg-[#0077ed]
+              text-[#0071e3] text-[15px]
+              rounded-full
+              transition-colors duration-200
+              border border-[#0071e3]">
+            Buy
+            </button>
+          </div>
+        </div>
+
+    
+        <div className="mt-auto w-full flex justify-center">
+        </div>
+      </div>
+      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10033.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div className="text-center pt-[20px] z-10">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
+            Ipad
+          </h1>
+          <p className="text-2xl font-normal text-black/90 mb-[15px]">
+            Now with the speed of the A16 chip and double the starting storage.
+          </p>
+          <div className=" flex gap-[18px] justify-center">
+           <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+              bg-[#0071e3] hover:bg-[#0077ed]
+              text-white text-[15px]
+              rounded-full
+              transition-colors duration-200
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+              Learn more
+            </button>
+            <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+            hover:bg-[#0077ed]
+              text-[#0071e3] text-[15px]
+              rounded-full
+              transition-colors duration-200
+              border border-[#0071e3]">
+            Buy
+            </button>
+          </div>
+        </div>
+
+    
+        <div className="mt-auto w-full flex justify-center">
+        </div>
+      </div>
+      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10036.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div className="text-center pt-[20px] z-10">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
+            Apple Trade In
+          </h1>
+          <p className="text-2xl font-normal text-black/90 mb-[15px]">
+            Get up to $180–$670 in credit when you trade in iPhone 13 or higher.
+          </p>
+          <div className=" flex gap-[18px] justify-center">
+           <button className="inline-flex items-center justify-center
+              px-[18px] py-[8px]
+              bg-[#0071e3] hover:bg-[#0077ed]
+              text-white text-[15px]
+              rounded-full
+              transition-colors duration-200
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+              Learn more
+            </button>
+            <button className="inline-flex items-center justify-center
+>>>>>>> 8a03125413a061b093e8be59016412d901beea10
               px-[18px] py-[8px]
             hover:bg-[#0077ed]
               text-[#0071e3] text-[15px]
@@ -165,6 +319,7 @@ const Home = () => {
           <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
+<<<<<<< HEAD
         <div className="w-full h-full mx-auto  bg-[url('/assets/image/10031.jpg')] bg-cover bg-center bg-no-repeat mb-3">
           <div className="text-center pt-[20px] z-10">
             <h1 className="text-[50px] font-semibold tracking-tight text-black mb-8">
@@ -175,6 +330,23 @@ const Home = () => {
             </p>
             <div className=" flex gap-[18px] justify-center">
               <button className="inline-flex items-center justify-center
+=======
+
+    
+        <div className="mt-auto w-full flex justify-center">
+        </div>
+      </div>
+      <div className="w-full h-full mx-auto  bg-[url('/assets/image/10037.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div className="text-center pt-[20px] z-10">
+          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
+            Apple Card
+          </h1>
+          <p className="text-2xl font-normal text-black/90 mb-[15px]">
+            Get up to 3% Daily Cash back with every purchase.
+          </p>
+          <div className=" flex gap-[18px] justify-center">
+           <button className="inline-flex items-center justify-center
+>>>>>>> 8a03125413a061b093e8be59016412d901beea10
               px-[18px] py-[8px]
               bg-[#0071e3] hover:bg-[#0077ed]
               text-white text-[15px]
@@ -338,7 +510,11 @@ const Home = () => {
       </div>
       {/* SLide */}
       <div className="w-full h-auto mb-3 ">
+<<<<<<< HEAD
         <EntertainmentSection />
+=======
+            <EntertainmentSection />
+>>>>>>> 8a03125413a061b093e8be59016412d901beea10
       </div>
     </div>
   );

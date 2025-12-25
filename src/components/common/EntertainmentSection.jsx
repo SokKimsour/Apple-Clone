@@ -43,10 +43,8 @@ const EntertainmentSection = () => {
   ];
 
   // Auto scroll
+  // Auto scroll
   useEffect(() => {
-    const topRowScrollAmount = 3 * (1250 + 20); // 3 items + gap
-    const bottomRowScrollAmount = 11 * (470 + 20); // 11 items + gap
-
     const interval = setInterval(() => {
       // Top row
       if (topScrollRef.current) {
@@ -56,8 +54,9 @@ const EntertainmentSection = () => {
           topScrollAccumulator.current -= pixels;
           topScrollRef.current.scrollLeft += pixels;
 
-          if (topScrollRef.current.scrollLeft >= topRowScrollAmount) {
-            topScrollRef.current.scrollLeft -= topRowScrollAmount;
+          const maxScroll = topScrollRef.current.scrollWidth / 2;
+          if (topScrollRef.current.scrollLeft >= maxScroll) {
+            topScrollRef.current.scrollLeft -= maxScroll;
           }
         }
       }
@@ -70,8 +69,9 @@ const EntertainmentSection = () => {
           bottomScrollAccumulator.current -= pixels;
           bottomScrollRef.current.scrollLeft += pixels;
 
-          if (bottomScrollRef.current.scrollLeft >= bottomRowScrollAmount) {
-            bottomScrollRef.current.scrollLeft -= bottomRowScrollAmount;
+          const maxScroll = bottomScrollRef.current.scrollWidth / 2;
+          if (bottomScrollRef.current.scrollLeft >= maxScroll) {
+            bottomScrollRef.current.scrollLeft -= maxScroll;
           }
         }
       }
@@ -81,24 +81,31 @@ const EntertainmentSection = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
     <section className="bg-[#f5f5f7] my-24 overflow-hidden">
       {/* Title */}
       <h2 className="text-center text-4xl md:text-5xl font-semibold mb-16 py-[40px]">
         Endless entertainment.
+=======
+    <section className="bg-[#f5f5f7] py-10 min-[830px]:py-24 overflow-hidden">
+      {/* Title */}
+      <h2 className="text-center text-2xl min-[830px]:text-5xl font-semibold mb-8 min-[830px]:mb-16 py-[20px] min-[830px]:py-[40px]">
+       Endless entertainment.
+>>>>>>> 8a03125413a061b093e8be59016412d901beea10
       </h2>
 
       {/* Top row */}
       <div
         ref={topScrollRef}
         className="w-full overflow-x-auto scrollbar-hide
-                   flex gap-[20px] px-24 pb-[20px]
+                   flex gap-[20px] px-4 min-[830px]:px-24 pb-[20px]
                    cursor-grab active:cursor-grabbing"
       >
         {heroImages.map((item, index) => (
           <div
             key={index}
             className="group relative
-                       min-w-[1250px] h-[700px]
+                       min-w-[300px] h-[200px] min-[830px]:min-w-[1250px] min-[830px]:h-[700px]
                        flex-shrink-0
                        overflow-hidden
                        shadow-xl
@@ -112,12 +119,12 @@ const EntertainmentSection = () => {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
 
-            <div className="absolute bottom-8 left-8 text-white">
-              <h3 className="text-2xl font-medium mb-1">{item.title}</h3>
-              <p className="text-sm opacity-90">{item.description}</p>
+            <div className="absolute bottom-4 left-4 min-[830px]:bottom-8 min-[830px]:left-8 text-white">
+              <h3 className="text-lg min-[830px]:text-2xl font-medium mb-1">{item.title}</h3>
+              <p className="text-xs min-[830px]:text-sm opacity-90">{item.description}</p>
             </div>
 
-            <button className="absolute bottom-8 right-8 bg-white text-black px-5 py-2 rounded-full text-sm font-medium shadow">
+            <button className="absolute bottom-4 right-4 min-[830px]:bottom-8 min-[830px]:right-8 bg-white text-black px-3 py-1 min-[830px]:px-5 min-[830px]:py-2 rounded-full text-xs min-[830px]:text-sm font-medium shadow">
               Explore
             </button>
           </div>
@@ -128,14 +135,14 @@ const EntertainmentSection = () => {
       <div
         ref={bottomScrollRef}
         className="w-full overflow-x-auto scrollbar-hide
-                   flex gap-[20px] px-24 py-10
+                   flex gap-[20px] px-4 min-[830px]:px-24 py-5 min-[830px]:py-10
                    cursor-grab active:cursor-grabbing"
       >
         {miniImages.map((item, index) => (
           <div
             key={index}
             className="group relative
-                       min-w-[470px] h-[260px]
+                       min-w-[200px] h-[120px] min-[830px]:min-w-[470px] min-[830px]:h-[260px]
                        flex-shrink-0
                        overflow-hidden
                        shadow-lg"
@@ -146,7 +153,7 @@ const EntertainmentSection = () => {
               className="w-full h-full object-cover"
             />
 
-            <button className="absolute bottom-5 left-5 bg-white text-black px-4 py-1.5 rounded-full text-xs font-medium">
+            <button className="absolute bottom-3 left-3 min-[830px]:bottom-5 min-[830px]:left-5 bg-white text-black px-3 py-1 min-[830px]:px-4 min-[830px]:py-1.5 rounded-full text-[10px] min-[830px]:text-xs font-medium">
               {item.label}
             </button>
           </div>
