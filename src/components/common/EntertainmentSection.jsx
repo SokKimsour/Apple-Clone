@@ -99,7 +99,7 @@ const EntertainmentSection = () => {
             key={index}
             className="group relative
                        min-w-[300px] h-[200px] min-[830px]:min-w-[1250px] min-[830px]:h-[700px]
-                       flex-shrink-0
+                       shrink-0
                        overflow-hidden
                        shadow-xl
                        snap-start"
@@ -110,14 +110,14 @@ const EntertainmentSection = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/10 to-transparent" />
 
             <div className="absolute bottom-4 left-4 min-[830px]:bottom-8 min-[830px]:left-8 text-white">
               <h3 className="text-lg min-[830px]:text-2xl font-medium mb-1">{item.title}</h3>
               <p className="text-xs min-[830px]:text-sm opacity-90">{item.description}</p>
             </div>
 
-            <button className="absolute bottom-4 right-4 min-[830px]:bottom-8 min-[830px]:right-8 bg-white text-black px-3 py-1 min-[830px]:px-5 min-[830px]:py-2 rounded-full text-xs min-[830px]:text-sm font-medium shadow">
+            <button className="absolute bottom-4 right-4 min-[830px]:bottom-8 min-[830px]:right-8 bg-white text-black px-5 py-3 min-[830px]:px-6 min-[830px]:py-4 rounded-full text-xs min-[830px]:text-sm font-medium shadow">
               Explore
             </button>
           </div>
@@ -136,7 +136,7 @@ const EntertainmentSection = () => {
             key={index}
             className="group relative
                        min-w-[200px] h-[120px] min-[830px]:min-w-[470px] min-[830px]:h-[260px]
-                       flex-shrink-0
+                       shrink-0
                        overflow-hidden
                        shadow-lg"
           >
@@ -146,7 +146,7 @@ const EntertainmentSection = () => {
               className="w-full h-full object-cover"
             />
 
-            <button className="absolute bottom-3 left-3 min-[830px]:bottom-5 min-[830px]:left-5 bg-white text-black px-3 py-1 min-[830px]:px-4 min-[830px]:py-1.5 rounded-full text-[10px] min-[830px]:text-xs font-medium">
+            <button className="absolute bottom-3 left-3 min-[830px]:bottom-5 min-[830px]:left-5 bg-white text-black px-5 py-3 min-[830px]:px-4 min-[830px]:py-1.5 rounded-full text-[10px] min-[830px]:text-xs font-medium">
               {item.label}
             </button>
           </div>
