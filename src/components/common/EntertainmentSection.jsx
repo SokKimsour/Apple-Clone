@@ -110,7 +110,7 @@ const EntertainmentSection = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
 
             <div className="absolute bottom-4 left-4 min-[830px]:bottom-8 min-[830px]:left-8 text-white">
               <h3 className="text-lg min-[830px]:text-2xl font-medium mb-1">{item.title}</h3>

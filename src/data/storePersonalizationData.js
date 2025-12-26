@@ -1,0 +1,61 @@
+export const storePersonalizationData = {
+  section_title: "Personalization. Make it one of a kind.",
+  products: [
+    {
+      id: 1,
+      category: "Free engraving",
+      name: "AirPods Pro",
+      description: "Add an engraving. Only at Apple.",
+      image: "assets/image/Personalization/10008.png",
+    },
+    {
+      id: 2,
+      category: "Mix and match",
+      name: "Apple Watch bands",
+      description: "Choose colors that fit your style.",
+      image: "assets/image/Personalization/10002.jpeg",
+    },
+    {
+      id: 3,
+      category: "Personal touch",
+      name: "iPad",
+      description: "Engrave your iPad for free.",
+      image: "assets/image/Personalization/10007.jpeg",
+    },
+    {
+      id: 4,
+      category: "Gift-ready",
+      name: "AirTag",
+      description: "Personalize with emoji and text.",
+      image: "assets/image/Personalization/10002.jpeg",
+    },
+    {
+      id: 5,
+      category: "Custom look",
+      name: "iPhone cases",
+      description: "Styles and colors you’ll love.",
+      image: "assets/image/Personalization/10005.jpeg",
+    },
+    {
+      id: 6,
+      category: "Engrave it",
+      name: "Apple Pencil",
+      description: "Make it unmistakably yours.",
+      image: "assets/image/Personalization/10003.jpeg",
+    },
+    {
+      id: 7,
+      category: "Personalized",
+      name: "HomePod mini",
+      description: "Sound that fills the room your way.",
+      image: "assets/image/Personalization/10007.jpeg",
+    },
+    {
+      id: 8,
+      category: "Make it yours",
+      name: "MacBook",
+      description: "Choose finishes and configurations.",
+      image: "assets/image/Personalization/10006.png",
+    },
+  ],
+};
