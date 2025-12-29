@@ -54,6 +54,7 @@ export const macData_menu = {
 export const macproduct = {
     products: [
     {
+      id: 1,
       name: "MacBook Air 13” and 15”",
       category: "Laptops",
       chip: "M4 chip",
@@ -63,6 +64,7 @@ export const macproduct = {
       image: "assets/image/macProducts/1.jpg"
     },
     {
+      id: 2,
       name: "MacBook Pro 14” and 16”",
       category: "Laptops",
       chip: "M5, M4 Pro, or M4 Max chip",
@@ -73,6 +75,7 @@ export const macproduct = {
       image: "assets/image/macProducts/2.jpg"
     },
     {
+      id: 3,
       name: "iMac",
       category: "Desktops",
       chip: "M4 chip",
@@ -82,6 +85,7 @@ export const macproduct = {
       image: "assets/image/macProducts/3.jpg"
     },
     {
+      id: 4,
       name: "Mac mini",
       category: "Desktops",
       chip: "M4 or M4 Pro chip",
@@ -91,6 +95,7 @@ export const macproduct = {
       image: "assets/image/macProducts/4.jpg"
     },
     {
+      id: 5,
       name: "Mac Studio",
       category: "Desktops",
       chip: "M4 Max or M3 Ultra chip",
@@ -100,6 +105,7 @@ export const macproduct = {
       image: "assets/image/macProducts/5.jpg"
     },
     {
+      id: 6,
       name: "Mac Pro",
       category: "Desktops",
       chip: "M2 Ultra chip",
@@ -109,6 +115,7 @@ export const macproduct = {
       image: "assets/image/macProducts/6.jpg"
     },
     {
+      id: 7,
       name: "Studio Display",
       category: "Displays",
       description: "A 5K Retina display with stellar camera and audio.",
@@ -117,6 +124,7 @@ export const macproduct = {
       image: "assets/image/macProducts/7.jpg"
     },
     {
+      id: 8,
       name: "Pro Display XDR",
       category: "Displays",
       description: "An advanced 6K XDR display for pro workflows.",

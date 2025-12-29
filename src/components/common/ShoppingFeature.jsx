@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { shoppingFeature } from "../../data/mac.js";
-import { getAssetPath } from "../../utils/assets.js";
+import { getAssetPath } from "../../assets.js";
 
 export default function ShoppingFeature() {
   const scrollRef = useRef(null);

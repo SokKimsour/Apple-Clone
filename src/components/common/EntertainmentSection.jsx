@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { getAssetPath } from "../../utils/assets";
+import { getAssetPath } from "../../assets";
 
 const EntertainmentSection = () => {
   const topScrollRef = useRef(null);

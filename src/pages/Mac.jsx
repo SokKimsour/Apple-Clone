@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { macData_menu } from "../data/mac";
-import { getAssetPath } from "../utils/assets";
+import { getAssetPath } from "../assets";
 import MacShowProduct from "../components/common/MacShowProduct";
 import ShoppingFeature from "../components/common/ShoppingFeature";
 import WhyMac from "../components/common/WhyMac";
@@ -124,7 +124,7 @@ const Mac = () => {
                                 <p className="text-[16px] text-blue-500 ">Shop mac accessories</p>
                             </div>
                             <div className="w-full h-full bg-white">
-                                <img src={getAssetPath("assets/image/global/switchtomac1.png")} alt="switchtomac" className="w-full h-full object-cover" />
+                                <img src={getAssetPath("assets/image/global/accessories1.png")} alt="switchtomac" className="w-full h-full object-contain" />
                             </div>
                         </div>
                         <div className="grid grid-rows-[auto_1fr] md:grid-rows-2 rounded-2xl bg-white overflow-hidden min-h-[500px] md:min-h-0">
@@ -134,7 +134,7 @@ const Mac = () => {
                                 <p className="text-[16px] text-blue-500 ">learn more</p>
                             </div>
                             <div className="w-full h-full bg-white">
-                                <img src={getAssetPath("assets/image/global/10003.png")} alt="switchtomac" className="w-full h-full object-cover" />
+                                <img src={getAssetPath("assets/image/global/accessories2.png")} alt="switchtomac" className="w-full h-full object-contain" />
                             </div>
                         </div>
                     </div>

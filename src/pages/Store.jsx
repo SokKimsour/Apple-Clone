@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { getAssetPath } from "../utils/assets";
+import { getAssetPath } from "../assets";
 import { storeCategories } from "../data/storeData";
 import { storeTheLatestData } from "../data/store_theLatest";
 import { storePersonalizationData } from "../data/storePersonalizationData.js";

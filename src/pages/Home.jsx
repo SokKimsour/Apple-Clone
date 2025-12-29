@@ -1,6 +1,6 @@
 import React from "react";
 import EntertainmentSection from "../components/common/EntertainmentSection";
-import { getAssetPath } from "../utils/assets";
+import { getAssetPath } from "../assets";
 const productSections = [
   {
     name: "iPad Pro",

@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { macproduct } from "../../data/mac";
-import { getAssetPath } from "../../utils/assets";
+import { getAssetPath } from "../../assets";
 
 export default function MacShowProduct() {
   const [active, setActive] = useState("All Products");

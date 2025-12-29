@@ -7,7 +7,7 @@ const MacLinks = () => {
                 <h2 className="text-3xl md:text-[40px] font-semibold text-[#1d1d1f] mb-8 md:mb-12">Mac</h2>
                 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-                    {/* Explore Mac Column */}
+            
                     <div className="flex flex-col gap-4">
                         <h3 className="text-[12px] font-semibold text-[#6e6e73] mb-1">Explore Mac</h3>
                         <ul className="flex flex-col gap-3">

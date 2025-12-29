@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { whyMac } from "../../data/mac.js";
+import { getAssetPath } from "../../assets.js";
 
 export default function WhyMac() {
   const scrollRef = useRef(null);

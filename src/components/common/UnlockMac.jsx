@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getAssetPath } from '../../utils/assets';
+import { getAssetPath } from '../../assets';
 
 const UnlockMac = () => {
     const [activeSection, setActiveSection] = useState(0);
