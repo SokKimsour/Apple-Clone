@@ -34,7 +34,7 @@ export default function WhyMac() {
 
   return (
     <section className="w-full h-auto bg-white pt-[100px] overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-12">
+      <div className="w-full max-w-[1260px] 2xl:max-w-[1920px] mx-auto px-4 xl:px-0">
         <h2 className="text-[40px] md:text-[64px] leading-[1.1] font-semibold text-[#1d1d1f] mb-16">
           Why Apple is the best
           <br />
@@ -45,7 +45,7 @@ export default function WhyMac() {
       <div className="relative">
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto scroll-smooth gap-6 px-6 md:px-10 lg:px-[650px] pb-12 snap-x snap-mandatory scrollbar-hide"
+          className="flex overflow-x-auto scroll-smooth gap-6 px-4 xl:px-[calc(50vw-630px)] 2xl:px-[calc(50vw-960px)] pb-12 snap-x snap-mandatory scrollbar-hide"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {whyMac.map((item) => (
@@ -93,8 +93,7 @@ export default function WhyMac() {
           ))}
           <div className="min-w-px h-full"></div>
         </div>
-        f
-        <div className="flex justify-end w-[1260px] mx-auto gap-4 mt-4 pb-10">
+        <div className="flex justify-center md:justify-end w-full max-w-[1260px] 2xl:max-w-[1920px] mx-auto gap-4 mt-4 pb-10 px-4 xl:px-0">
           <button
             onClick={() => scroll("left")}
             className="p-4 bg-gray-200/50 hover:bg-gray-300/80 rounded-full transition-all"

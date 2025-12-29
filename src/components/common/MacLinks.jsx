@@ -2,9 +2,9 @@ import React from 'react';
 
 const MacLinks = () => {
     return (
-        <section className="bg-white py-20 px-6 md:px-10 lg:px-12">
-            <div className="max-w-[1260px] mx-auto">
-                <h2 className="text-[40px] font-semibold text-[#1d1d1f] mb-12">Mac</h2>
+        <section className="bg-white py-10 md:py-20 px-4 md:px-10 lg:px-12">
+            <div className="w-full max-w-[1260px] mx-auto">
+                <h2 className="text-3xl md:text-[40px] font-semibold text-[#1d1d1f] mb-8 md:mb-12">Mac</h2>
                 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
                     {/* Explore Mac Column */}

@@ -22,10 +22,10 @@ const UnlockMac = () => {
     ];
 
     return (
-        <section className="w-full h-auto py-[100px] bg-white">
-            <div className="w-[1260px] mx-auto">
-                <div className="flex items-center justify-between mb-[74px]">
-                    <h2 className="text-[56px] font-semibold text-[#1d1d1f]">
+        <section className="w-full h-auto py-16 md:py-[100px] bg-white">
+            <div className="w-full max-w-[1260px] mx-auto px-4 md:px-0">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 md:mb-[74px] gap-4 md:gap-0">
+                    <h2 className="text-4xl md:text-[56px] font-semibold text-[#1d1d1f]">
                         Unlock the world of Apple.
                     </h2>
                     <a href="#" className="text-[17px] text-[#0066cc] hover:underline cursor-pointer">
@@ -33,8 +33,8 @@ const UnlockMac = () => {
                     </a>
                 </div>
 
-                <div className="w-full h-[600px] bg-[#f5f5f7] rounded-[30px] overflow-hidden flex">
-                    <div className="w-[40%] h-full p-[60px] flex flex-col justify-center">
+                <div className="w-full h-auto md:h-[600px] bg-[#f5f5f7] rounded-[30px] overflow-hidden flex flex-col md:flex-row">
+                    <div className="w-full md:w-[40%] h-auto md:h-full p-8 md:p-[60px] flex flex-col justify-center order-2 md:order-1">
                         <div className="flex flex-col gap-6">
                             {sections.map((section, index) => (
                                 <div 
@@ -45,7 +45,7 @@ const UnlockMac = () => {
                                         onClick={() => setActiveSection(index)}
                                         className="w-full flex items-center justify-between text-left group"
                                     >
-                                        <h3 className="text-[24px] font-semibold text-[#1d1d1f]">
+                                        <h3 className="text-xl md:text-[24px] font-semibold text-[#1d1d1f]">
                                             {section.title}
                                         </h3>
                                         <span className={`text-[24px] text-[#1d1d1f] transition-transform duration-300 ${activeSection === index ? 'rotate-180' : ''}`}>
@@ -56,7 +56,7 @@ const UnlockMac = () => {
                                     </button>
                                     
                                     <div className={`overflow-hidden transition-all duration-500 ease-in-out ${activeSection === index ? 'max-h-[300px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
-                                        <p className="text-[17px] leading-relaxed text-[#1d1d1f]">
+                                        <p className="text-[15px] md:text-[17px] leading-relaxed text-[#1d1d1f]">
                                             {section.description}
                                         </p>
                                     </div>
@@ -65,7 +65,7 @@ const UnlockMac = () => {
                         </div>
                     </div>
 
-                    <div className="w-[60%] h-full relative p-2">
+                    <div className="w-full md:w-[60%] h-[300px] md:h-full relative p-2 order-1 md:order-2">
                         <div className="w-full h-full relative overflow-hidden rounded-[24px]">
                             {sections.map((section, index) => (
                                 <img

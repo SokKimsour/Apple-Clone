@@ -88,25 +88,27 @@ const Store = () => {
             </div>
 
             {/* Store-style gradient */}
-            <div className="relative overflow-hidden w-full h-[228px] flex justify-center items-center px-[148px]">
-                <div className="relative w-full  flex items-center justify-between px-4">
+            <div className="relative overflow-hidden w-full h-[120px] md:h-[228px] flex justify-center items-center px-4 md:px-[148px]">
+                <div className="relative w-full flex flex-col md:flex-row items-start md:items-center justify-between px-4 gap-4 md:gap-0">
                     {/* Left */}
-                    <h1 className="text-[clamp(64px,8vw,80px)] font-bold  tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
+                    <h1 className="text-[40px] md:text-[80px] font-bold tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
                         Store
                     </h1>
 
                     {/* Right */}
-                    <div className="flex flex-col text-right gap-3 max-w-[420px]">
-                        <h2 className="text-[28px] font-semibold text-[#1d1d1f]">
+                    <div className="flex flex-col text-left md:text-right gap-1 md:gap-3 max-w-full md:max-w-[420px]">
+                        <h2 className="text-xl md:text-[28px] font-semibold text-[#1d1d1f]">
                             Give something special this holiday.
                         </h2>
 
-                        <a className="text-[14px] font-medium text-[#0066cc] hover:underline">
-                            Connect with a Specialist ↗
-                        </a>
-                        <a className="text-[14px] font-medium text-[#0066cc] hover:underline">
-                            Find an Apple Store ↗
-                        </a>
+                        <div className="flex flex-col md:block">
+                            <a className="text-[14px] font-medium text-[#0066cc] hover:underline block md:inline mr-0 md:mr-4">
+                                Connect with a Specialist ↗
+                            </a>
+                            <a className="text-[14px] font-medium text-[#0066cc] hover:underline block md:inline">
+                                Find an Apple Store ↗
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,22 +120,22 @@ const Store = () => {
                 onMouseLeave={section1.handleMouseLeave}
                 onMouseUp={section1.handleMouseUp}
                 onMouseMove={section1.handleMouseMove}
-                className={` bg-white w-full h-auto px-[148px] pb-[40px] overflow-x-auto scrollbar-hide select-none transition-all duration-300 ${section1.isDragging ? "cursor-grabbing" : "cursor-grab"
+                className={` bg-white w-full h-auto px-4 md:px-[148px] pb-[40px] overflow-x-auto scrollbar-hide select-none transition-all duration-300 ${section1.isDragging ? "cursor-grabbing" : "cursor-grab"
                     }`}
             >
-                <div className="flex gap-12 px-4  w-full h-[204px]">
+                <div className="flex gap-4 md:gap-12 px-4 w-full h-[160px] md:h-[204px]">
                     {storeCategories.map((item) => (
                         <div
                             key={item.id}
-                            className="flex flex-col items-center justify-center min-w-[110px] group"
+                            className="flex flex-col items-center justify-center min-w-[80px] md:min-w-[110px] group"
                         >
                             <img
                                 src={item.image}
                                 alt={item.name}
-                                className="h-18 min-[830px]:h-[80px] object-contain transition-transform group-hover:scale-105 pointer-events-none"
+                                className="h-12 md:h-18 min-[830px]:h-[80px] object-contain transition-transform group-hover:scale-105 pointer-events-none"
                             />
 
-                            <span className="mt-4 text-[17px] font-medium text-[#1d1d1f] group-hover:text-[#0066cc] transition-colors whitespace-nowrap">
+                            <span className="mt-4 text-[12px] md:text-[17px] font-medium text-[#1d1d1f] group-hover:text-[#0066cc] transition-colors whitespace-nowrap">
                                 {item.name}
                             </span>
                         </div>
@@ -142,12 +144,12 @@ const Store = () => {
             </section>
             {/*The latest*/}
             <section className="w-full h-auto pb-[40px]">
-                <div className="w-full  h-auto px-[148px]">
+                <div className="w-full  h-auto px-6 md:px-[148px]">
                     <h2 className="text-[28px] font-semibold">
                         <span className="tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
                             The latest.
                         </span>
-                        <span className="text-[28px] text-gray-500">Truly awe-inspired gifts.</span>
+                        <span className="block md:inline text-[28px] text-gray-500 md:ml-2">Truly awe-inspired gifts.</span>
                     </h2>
 
                 </div>
@@ -158,7 +160,7 @@ const Store = () => {
                     onMouseLeave={section2.handleMouseLeave}
                     onMouseUp={section2.handleMouseUp}
                     onMouseMove={section2.handleMouseMove}
-                    className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-[148px] pt-[16px] pb-[40px] ${section2.isDragging ? "cursor-grabbing" : "cursor-grab"
+                    className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-6 md:px-[148px] pt-[16px] pb-[40px] ${section2.isDragging ? "cursor-grabbing" : "cursor-grab"
                         }`}
                 >
                     <div className="flex gap-6 px-[22px] min-w-max">
@@ -202,12 +204,12 @@ const Store = () => {
             </section>
             {/* Personalization.*/}
              <section className="w-full h-auto pb-[40px]">
-                <div className="w-full  h-auto px-[148px]">
+                <div className="w-full  h-auto px-6 md:px-[148px]">
                     <h2 className="text-[28px] font-semibold">
                         <span className="tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
                             Personalization.
                         </span>
-                        <span className="text-[28px] text-gray-500">Truly awe-inspired gifts.</span>
+                        <span className="block md:inline text-[28px] text-gray-500 md:ml-2">Truly awe-inspired gifts.</span>
                     </h2>
 
                 </div>
@@ -218,7 +220,7 @@ const Store = () => {
                     onMouseLeave={section3.handleMouseLeave}
                     onMouseUp={section3.handleMouseUp}
                     onMouseMove={section3.handleMouseMove}
-                    className={` overflow-x-auto scroll-smooth scrollbar-hide select-none px-[148px] pt-[16px] pb-[40px] ${section3.isDragging ? "cursor-grabbing" : "cursor-grab"
+                    className={` overflow-x-auto scroll-smooth scrollbar-hide select-none px-6 md:px-[148px] pt-[16px] pb-[40px] ${section3.isDragging ? "cursor-grabbing" : "cursor-grab"
                         }`}
                 >
                     <div className="flex gap-6 px-[22px] min-w-max">
@@ -261,7 +263,7 @@ const Store = () => {
 
             {/* Help*/}
             <section className="w-full h-auto pb-[40px]">
-                <div className="w-full h-auto px-[148px]">
+                <div className="w-full h-auto px-6 md:px-[148px]">
                     <h2 className="text-[28px] font-semibold">
                         <span className="text-[28px] text-gray-500">Help is here. Whenever and however you need it.</span>
                     </h2>
@@ -273,7 +275,7 @@ const Store = () => {
                     onMouseLeave={section4.handleMouseLeave}
                     onMouseUp={section4.handleMouseUp}
                     onMouseMove={section4.handleMouseMove}
-                    className={`px-[148px] overflow-x-auto scroll-smooth scrollbar-hide select-none pt-[16px] pb-[40px] ${section4.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+                    className={`px-6 md:px-[148px] overflow-x-auto scroll-smooth scrollbar-hide select-none pt-[16px] pb-[40px] ${section4.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
                 >
                     <div className="flex gap-6 px-[22px] min-w-max">
                         {storeHelpData.items.map((item) => (
@@ -315,7 +317,7 @@ const Store = () => {
 
             {/* The Apple Store difference */}
             <section className="w-full h-auto pb-[40px]">
-                <div className="w-full h-auto px-[148px]">
+                <div className="w-full h-auto px-6 md:px-[148px]">
                     <h2 className="text-[28px] font-semibold">
                         <span className="text-[28px] text-gray-500">The Apple Store difference. Even more reasons to shop with us.</span>
                     </h2>
@@ -327,7 +329,7 @@ const Store = () => {
                     onMouseLeave={section5.handleMouseLeave}
                     onMouseUp={section5.handleMouseUp}
                     onMouseMove={section5.handleMouseMove}
-                    className={`px-[148px] overflow-x-auto scroll-smooth scrollbar-hide select-none pt-[16px] pb-[40px] ${section5.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+                    className={`px-6 md:px-[148px] overflow-x-auto scroll-smooth scrollbar-hide select-none pt-[16px] pb-[40px] ${section5.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
                 >
                     <div className="flex gap-4 px-[22px] min-w-max">
                         {storeDifferenceData.items.map((item) => (
@@ -360,7 +362,7 @@ const Store = () => {
 
             {/* Accessories */}
             <section className="w-full h-auto">
-                <div className="w-full h-auto px-[148px]">
+                <div className="w-full h-auto px-6 md:px-[148px]">
                     <h2 className="text-[28px] font-semibold">
                         <span className="text-[28px] text-gray-500">{storeAccessoriesData.section_title} {storeAccessoriesData.section_subtitle}</span>
                     </h2>
@@ -372,7 +374,7 @@ const Store = () => {
                     onMouseLeave={section6.handleMouseLeave}
                     onMouseUp={section6.handleMouseUp}
                     onMouseMove={section6.handleMouseMove}
-                    className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-[148px] pt-[16px] pb-[40px] ${section6.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+                    className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-6 md:px-[148px] pt-[16px] pb-[40px] ${section6.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
                 >
                     <div className="flex gap-4 px-[22px] min-w-max">
                         {storeAccessoriesData.items.map((item) => (
@@ -453,7 +455,7 @@ const Store = () => {
 
             {/* Made to move */}
             <section className="w-full h-auto pb-[40px]">
-                <div className="w-full h-auto px-[148px]">
+                <div className="w-full h-auto px-6 md:px-[148px]">
                     <h2 className="text-[28px] font-semibold">
                         <span className="text-[28px] text-gray-500">{storeMadeToMoveData.section_title} {storeMadeToMoveData.section_subtitle}</span>
                     </h2>
@@ -465,7 +467,7 @@ const Store = () => {
                     onMouseLeave={section7.handleMouseLeave}
                     onMouseUp={section7.handleMouseUp}
                     onMouseMove={section7.handleMouseMove}
-                    className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-[148px] pt-[16px] pb-[40px] ${section7.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+                    className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-6 md:px-[148px] pt-[16px] pb-[40px] ${section7.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
                 >
                     <div className="flex gap-4 px-[22px] min-w-max">
                         {storeMadeToMoveData.items.map((item) => (
@@ -564,7 +566,7 @@ const Store = () => {
 
             {/* The Apple experience */}
             <section className="w-full h-auto pb-[40px] bg-white">
-                <div className="w-full h-auto px-[148px]">
+                <div className="w-full h-auto px-6 md:px-[148px]">
                     <h2 className="text-[28px] font-semibold">
                         <span className="text-[28px] text-gray-500">{appleExperienceData.section_title} {appleExperienceData.section_subtitle}</span>
                     </h2>
@@ -577,7 +579,7 @@ const Store = () => {
                         onMouseLeave={section8.handleMouseLeave}
                         onMouseUp={section8.handleMouseUp}
                         onMouseMove={section8.handleMouseMove}
-                        className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-[148px] pt-[16px] pb-[40px] ${section8.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+                        className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-6 md:px-[148px] pt-[16px] pb-[40px] ${section8.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
                     >
                         <div className="flex gap-4 px-[22px] min-w-max">
                             {appleExperienceData.items.map((item) => (
@@ -612,7 +614,7 @@ const Store = () => {
 
             {/* Savings and offers */}
             <section className="w-full h-auto pb-[40px]">
-                <div className="w-full h-auto px-[148px] pt-[40px]">
+                <div className="w-full h-auto px-6 md:px-[148px] pt-[40px]">
                     <h2 className="text-[28px] font-semibold">
                         <span className="text-[28px] text-gray-500">{savingsOffersData.section_title} {savingsOffersData.section_subtitle}</span>
                     </h2>
@@ -625,7 +627,7 @@ const Store = () => {
                         onMouseLeave={section9.handleMouseLeave}
                         onMouseUp={section9.handleMouseUp}
                         onMouseMove={section9.handleMouseMove}
-                        className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-[148px] pt-[16px] pb-[40px] ${section9.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+                        className={`overflow-x-auto scroll-smooth scrollbar-hide select-none px-6 md:px-[148px] pt-[16px] pb-[40px] ${section9.isDragging ? "cursor-grabbing" : "cursor-grab"}`}
                     >
                         <div className="flex gap-4 px-[22px] min-w-max">
                             {savingsOffersData.items.map((item) => (

@@ -22,12 +22,12 @@ export default function MacShowProduct() {
     : macproduct.products.filter(product => product.category === active);
 
   return (
-    <div className="pb-[160px]">
-      <h1 className="text-7xl font-semibold w-[1260px] mx-auto py-[80px]">
+    <div className="pb-16 md:pb-[160px]">
+      <h1 className="text-5xl md:text-7xl font-semibold w-full max-w-[1260px] 2xl:max-w-[1920px] mx-auto py-10 md:py-[80px] px-4 xl:px-0">
         Mac
       </h1>
-      <div className="w-[1260px] mx-auto">
-        <div className="w-[480px] bg-[rgb(232,232,237)] flex justify-center items-center text-lg rounded-full border-[6px] border-[rgb(232,232,237)]">
+      <div className="w-full max-w-[1260px] 2xl:max-w-[1920px] mx-auto px-4 xl:px-0 overflow-x-auto scrollbar-hide">
+        <div className="w-max md:w-[480px] bg-[rgb(232,232,237)] flex justify-start items-center text-sm md:text-lg rounded-full border-[6px] border-[rgb(232,232,237)]">
           <p
             className={`px-5 h-[44px] flex items-center justify-center cursor-pointer transition-all duration-200   ${
               active === "All Products"
@@ -67,27 +67,28 @@ export default function MacShowProduct() {
       
       <div 
         ref={scrollRef}
-        className="w-full h-[700px] flex items-center justify-start px-[650px] overflow-x-scroll gap-[18px] scrollbar-hide snap-x"
+        className="w-full h-[700px] flex items-center justify-start px-4 xl:px-[calc(50vw-630px)] 2xl:px-[calc(50vw-960px)] overflow-x-auto gap-4 md:gap-[18px] scrollbar-hide snap-x snap-mandatory"
       >
         {filteredProducts.map((product) => (
           <div
-            key={product.name}
-            className="w-[372px] h-[620px] flex flex-col justify-between items-center snap-center shrink-0"
+            key={product.id}
+            className="snap-center shrink-0 w-[80vw] md:w-[372px] h-[580px] md:h-[620px] transition-all duration-300"
           >
+            <div className="relative w-full h-full bg-white rounded-[24px] md:rounded-[28px] p-6 md:p-8 flex flex-col items-center shadow-lg group hover:scale-[1.02] transition-transform duration-300">
             <img
-              className="w-[372px] h-[252px] object-contain"
+              className="w-full md:w-[372px] h-[200px] md:h-[252px] object-contain"
               src={product.image}
               alt={product.name}
             />
-            <div className="flex flex-col justify-between items-center w-[372px] h-[82px]">
-              <h1 className="text-2xl font-bold">{product.name}</h1>
-              <p className="text-lg">{product.chip}</p>
+            <div className="flex flex-col justify-between items-center w-full md:w-[372px] h-auto md:h-[82px] mb-4 md:mb-0 text-center md:text-left">
+              <h1 className="text-xl md:text-2xl font-bold">{product.name}</h1>
+              <p className="text-sm md:text-lg">{product.chip}</p>
             </div>
-            <div className="text-center flex flex-col justify-start items-center w-[372px] h-[116px] px-7 mb-10">
-              <p className="text-lg text-black/50 my-4">
+            <div className="text-center flex flex-col justify-start items-center w-full md:w-[372px] h-auto md:h-[116px] px-2 md:px-7 mb-6 md:mb-10">
+              <p className="text-sm md:text-lg text-black/50 my-2 md:my-4">
                 {product.description}
               </p>
-              <p className="text-lg">
+              <p className="text-sm md:text-lg">
                 From {product.starting_price} or {product.monthly_price}. for
                 24 months
               </p>
@@ -117,10 +118,11 @@ export default function MacShowProduct() {
               </button>
             </div>
           </div>
+          </div>
         ))}
       </div>
-
-      <div className="flex justify-end w-[1260px] mx-auto gap-4 mt-4 pb-10">
+ 
+      <div className="flex justify-center md:justify-end w-full max-w-[1260px] 2xl:max-w-[1920px] mx-auto gap-4 mt-4 pb-10 px-4 xl:px-0">
         <button
           onClick={() => scroll("left")}
           className="p-4 bg-gray-200/50 hover:bg-gray-300/80 rounded-full transition-all"
