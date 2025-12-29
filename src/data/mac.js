@@ -2,52 +2,52 @@ export const macData_menu = {
   navigation_menu: [
     {
       name: "MacBook Air",
-      image: "/assets/image/macmenuicon/1.svg"
+      image: "assets/image/macmenuicon/1.svg"
     },
     {
       name: "MacBook Pro",
-      image: "/assets/image/macmenuicon/2.svg",
+      image: "assets/image/macmenuicon/2.svg",
       label: "New"
     },
     {
       name: "iMac",
-      image: "/assets/image/macmenuicon/3.svg"
+      image: "assets/image/macmenuicon/3.svg"
     },
     {
       name: "Mac mini",
-      image: "/assets/image/macmenuicon/4.svg"
+      image: "assets/image/macmenuicon/4.svg"
     },
     {
       name: "Mac Studio",
-      image: "/assets/image/macmenuicon/5.svg"
+      image: "assets/image/macmenuicon/5.svg"
     },
     {
       name: "Mac Pro",
-      image: "/assets/image/macmenuicon/6.svg"
+      image: "assets/image/macmenuicon/6.svg"
     },
     {
       name: "Help Me Choose",
-      image: "/assets/image/macmenuicon/7.svg"
+      image: "assets/image/macmenuicon/7.svg"
     },
     {
       name: "Compare",
-      image: "/assets/image/macmenuicon/8.svg"
+      image: "assets/image/macmenuicon/8.svg"
     },
     {
       name: "Displays",
-      image: "/assets/image/macmenuicon/9.svg"
+      image: "assets/image/macmenuicon/9.svg"
     },
     {
       name: "Accessories",
-      image: "/assets/image/macmenuicon/10.svg"
+      image: "assets/image/macmenuicon/10.svg"
     },
     {
       name: "Tahoe",
-      image: "/assets/image/macmenuicon/11.svg"
+      image: "assets/image/macmenuicon/11.svg"
     },
     {
       name: "Shop Mac",
-      image: "/assets/image/macmenuicon/12.svg"
+      image: "assets/image/macmenuicon/12.svg"
     }
   ]
 }
@@ -60,7 +60,7 @@ export const macproduct = {
       description: "Strikingly thin and fast so you can work, play, or create anywhere.",
       starting_price: "$999",
       monthly_price: "$83.25/mo.",
-      image: "/assets/image/macProducts/1.jpg"
+      image: "assets/image/macProducts/1.jpg"
     },
     {
       name: "MacBook Pro 14” and 16”",
@@ -70,7 +70,7 @@ export const macproduct = {
       description: "The most advanced Mac laptops for demanding workflows.",
       starting_price: "$1599",
       monthly_price: "$133.25/mo.",
-      image: "/assets/image/macProducts/2.jpg"
+      image: "assets/image/macProducts/2.jpg"
     },
     {
       name: "iMac",
@@ -79,7 +79,7 @@ export const macproduct = {
       description: "A stunning all-in-one desktop for creativity and productivity.",
       starting_price: "$1299",
       monthly_price: "$108.25/mo.",
-      image: "/assets/image/macProducts/3.jpg"
+      image: "assets/image/macProducts/3.jpg"
     },
     {
       name: "Mac mini",
@@ -88,7 +88,7 @@ export const macproduct = {
       description: "The mini-est, most affordable Mac with mighty performance.",
       starting_price: "$599",
       monthly_price: "$49.91/mo.",
-      image: "/assets/image/macProducts/4.jpg"
+      image: "assets/image/macProducts/4.jpg"
     },
     {
       name: "Mac Studio",
@@ -97,7 +97,7 @@ export const macproduct = {
       description: "Powerful performance and extensive connectivity for pro workflows.",
       starting_price: "$1999",
       monthly_price: "$166.58/mo.",
-      image: "/assets/image/macProducts/5.jpg"
+      image: "assets/image/macProducts/5.jpg"
     },
     {
       name: "Mac Pro",
@@ -106,7 +106,7 @@ export const macproduct = {
       description: "A pro workstation with PCIe expansion for demanding workflows.",
       starting_price: "$6999",
       monthly_price: "$583.25/mo.",
-      image: "/assets/image/macProducts/6.jpg"
+      image: "assets/image/macProducts/6.jpg"
     },
     {
       name: "Studio Display",
@@ -114,7 +114,7 @@ export const macproduct = {
       description: "A 5K Retina display with stellar camera and audio.",
       starting_price: "$1599",
       monthly_price: "$133.25/mo.",
-      image: "/assets/image/macProducts/7.jpg"
+      image: "assets/image/macProducts/7.jpg"
     },
     {
       name: "Pro Display XDR",
@@ -122,7 +122,7 @@ export const macproduct = {
       description: "An advanced 6K XDR display for pro workflows.",
       starting_price: "$4999",
       monthly_price: "$416.58/mo.",
-      image: "/assets/image/macProducts/8.jpg"
+      image: "assets/image/macProducts/8.jpg"
     }
   ]    
   
@@ -132,37 +132,37 @@ Features: [
     {
       title: "Pay over time, interest-free.",
       text: "When you choose to check out at Apple with Apple Card Monthly Installments.",
-      icon: "/assets/image/shoppingFeatureIcon/1.svg"
+      icon: "assets/image/shoppingFeatureIcon/1.svg"
     },
     {
       title: "Save on a new Mac with education pricing.",
       text: "Available to college students and educators.",
-      icon: "/assets/image/shoppingFeatureIcon/2.svg"
+      icon: "assets/image/shoppingFeatureIcon/2.svg"
     },
     {
       title: "Join an online Personal Setup session.",
       text: "Talk one on one with a Specialist to set up your Mac and discover new features.",
-      icon: "/assets/image/shoppingFeatureIcon/3.svg"
+      icon: "assets/image/shoppingFeatureIcon/3.svg"
     },
     {
       title: "Customize your Mac.",
       text: "Choose your chip, memory, storage, even color.",
-      icon: "/assets/image/shoppingFeatureIcon/4.svg"
+      icon: "assets/image/shoppingFeatureIcon/4.svg"
     },
     {
       title: "Get flexible delivery and easy pickup.",
       text: "Choose from two-hour delivery from an Apple Store, free delivery, or easy pickup options.",
-      icon: "/assets/image/shoppingFeatureIcon/5.svg"
+      icon: "assets/image/shoppingFeatureIcon/5.svg"
     },
     {
       title: "Shop live with a Specialist.",
       text: "Let us guide you live over video and answer all of your questions.",
-      icon: "/assets/image/shoppingFeatureIcon/6.svg"
+      icon: "assets/image/shoppingFeatureIcon/6.svg"
     },
     {
       title: "Explore a shopping experience designed around you.",
       text: "Use the Apple Store app to get a more personal way to shop.",
-      icon: "/assets/image/shoppingFeatureIcon/7.svg"
+      icon: "assets/image/shoppingFeatureIcon/7.svg"
     }
   ]
 }

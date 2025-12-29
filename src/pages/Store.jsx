@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { getAssetPath } from "../utils/assets";
 import { storeCategories } from "../data/storeData";
 import { storeTheLatestData } from "../data/store_theLatest";
 import { storePersonalizationData } from "../data/storePersonalizationData.js";
@@ -130,7 +131,7 @@ const Store = () => {
                             className="flex flex-col items-center justify-center min-w-[80px] md:min-w-[110px] group"
                         >
                             <img
-                                src={item.image}
+                                src={getAssetPath(item.image)}
                                 alt={item.name}
                                 className="h-12 md:h-18 min-[830px]:h-[80px] object-contain transition-transform group-hover:scale-105 pointer-events-none"
                             />
@@ -171,7 +172,7 @@ const Store = () => {
                             >
                                 {/* Image */}
                                 <img
-                                    src={item.image}
+                                    src={getAssetPath(item.image)}
                                     alt={item.name}
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />
@@ -231,7 +232,7 @@ const Store = () => {
                             >
                                 {/* Image */}
                                 <img
-                                    src={item.image}
+                                    src={getAssetPath(item.image)}
                                     alt={item.name}
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />
@@ -285,7 +286,7 @@ const Store = () => {
                             >
                                 {/* Image */}
                                 <img
-                                    src={item.image}
+                                    src={getAssetPath(item.image)}
                                     alt={item.name}
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />
@@ -395,7 +396,7 @@ const Store = () => {
                                         </p>
                                         <div className="flex-1 w-full relative">
                                              
-                                            {item.image && <img src={item.image} alt="" className="absolute inset-0 w-full h-full object-contain object-bottom" />}
+                                            {item.image && <img src={getAssetPath(item.image)} alt="" className="absolute inset-0 w-full h-full object-contain object-bottom" />}
                                         </div>
                                     </div>
                                 )}
@@ -405,7 +406,7 @@ const Store = () => {
                                     <div className="flex flex-col h-full p-6 pt-10">
                                          <div className="flex-1 w-full relative flex items-center justify-center mb-8">
                                             <img 
-                                                src={item.image} 
+                                                src={getAssetPath(item.image)} 
                                                 alt={item.name} 
                                                 className="w-full h-auto max-h-[200px] object-contain transition-transform duration-500 group-hover:scale-105" 
                                             />
@@ -443,7 +444,7 @@ const Store = () => {
                                         </span>
                                         <div className="flex-1 w-full relative">
                                              
-                                            {item.image && <img src={item.image} alt="" className="absolute inset-0 w-full h-full object-contain object-bottom" />}
+                                            {item.image && <img src={getAssetPath(item.image)} alt="" className="absolute inset-0 w-full h-full object-contain object-bottom" />}
                                         </div>
                                     </div>
                                 )}
@@ -485,7 +486,7 @@ const Store = () => {
                                         {/* Background Image */}
                                         {item.image && (
                                             <img 
-                                                src={item.image} 
+                                                src={getAssetPath(item.image)} 
                                                 alt="" 
                                                 className="absolute inset-0 w-full h-full object-cover"
                                             />
@@ -508,7 +509,7 @@ const Store = () => {
                                     <div className="flex flex-col h-full p-6 pt-10">
                                         <div className="flex-1 w-full relative flex items-center justify-center mb-8">
                                             <img 
-                                                src={item.image} 
+                                                src={getAssetPath(item.image)} 
                                                 alt={item.name} 
                                                 className="w-full h-auto max-h-[200px] object-contain transition-transform duration-500 group-hover:scale-105" 
                                             />
@@ -541,7 +542,7 @@ const Store = () => {
                                         {/* Background Image */}
                                         {item.image && (
                                             <img 
-                                                src={item.image} 
+                                                src={getAssetPath(item.image)} 
                                                 alt="" 
                                                 className="absolute inset-0 w-full h-full object-cover"
                                             />
@@ -590,7 +591,7 @@ const Store = () => {
                                     {/* Image */}
                                     {item.image && (
                                         <img 
-                                            src={item.image} 
+                                            src={getAssetPath(item.image)} 
                                             alt={item.title} 
                                             className="absolute inset-0 w-full h-full object-cover"
                                         />

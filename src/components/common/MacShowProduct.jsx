@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { macproduct } from "../../data/mac";
+import { getAssetPath } from "../../utils/assets";
 
 export default function MacShowProduct() {
   const [active, setActive] = useState("All Products");
@@ -77,7 +78,7 @@ export default function MacShowProduct() {
             <div className="relative w-full h-full bg-white rounded-[24px] md:rounded-[28px] p-6 md:p-8 flex flex-col items-center shadow-lg group hover:scale-[1.02] transition-transform duration-300">
             <img
               className="w-full md:w-[372px] h-[200px] md:h-[252px] object-contain"
-              src={product.image}
+              src={getAssetPath(product.image)}
               alt={product.name}
             />
             <div className="flex flex-col justify-between items-center w-full md:w-[372px] h-auto md:h-[82px] mb-4 md:mb-0 text-center md:text-left">

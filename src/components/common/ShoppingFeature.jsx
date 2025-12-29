@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { shoppingFeature } from "../../data/mac.js";
+import { getAssetPath } from "../../utils/assets.js";
 
 export default function ShoppingFeature() {
   const scrollRef = useRef(null);
@@ -33,7 +34,7 @@ export default function ShoppingFeature() {
                 className="relative w-[372px] h-[324px] rounded-2xl flex-shrink-0 overflow-hidden shadow-sm hover:shadow-md border border-gray-100 bg-white transition-all duration-300 p-8 flex flex-col justify-start"
               >
                  <span className="text-3xl mb-4 block text-gray-800">
-                  <img src={item.icon} alt="" />
+                  <img src={getAssetPath(item.icon)} alt="" />
                  </span>
 
                 <h3 className="text-[24px] font-semibold text-[#1d1d1f] leading-tight mb-3">

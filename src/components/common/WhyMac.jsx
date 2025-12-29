@@ -84,7 +84,7 @@ export default function WhyMac() {
               {/* Image */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src={`/assets/image/whymac/${item.id}.jpg`}
+                  src={getAssetPath(`assets/image/whymac/${item.id}.jpg`)}
                   alt={item.image_alt || ""}
                   className="w-full h-full object-cover"
                 />

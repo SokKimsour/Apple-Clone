@@ -1,5 +1,6 @@
 import React from "react";
 import EntertainmentSection from "../components/common/EntertainmentSection";
+import { getAssetPath } from "../utils/assets";
 const productSections = [
   {
     name: "iPad Pro",
@@ -27,7 +28,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[600px] overflow-hidden bg-white mb-3">
         <video
-          src="/assets/video/largetall_2x.mp4"
+          src={getAssetPath("assets/video/largetall_2x.mp4")}
           autoPlay
           muted
           playsInline
@@ -60,7 +61,10 @@ const Home = () => {
       </div>
 
       {/* 2*/}
-      <div className="w-full h-[697px] mx-auto  bg-[url('/assets/image/global/10025.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+      <div 
+        className="w-full h-[697px] mx-auto bg-cover bg-center bg-no-repeat mb-3"
+        style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10025.jpg")})` }}
+      >
         <div className="text-center pt-[20px] z-10">
           <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             iPhone
@@ -95,7 +99,10 @@ const Home = () => {
         </div>
       </div>
       {/* 3*/}
-      <div className="w-full h-[697px] mx-auto  bg-[url('/assets/image/global/10026.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+      <div 
+        className="w-full h-[697px] mx-auto bg-cover bg-center bg-no-repeat mb-3"
+        style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10026.jpg")})` }}
+      >
         <div className="text-center pt-[20px] z-10">
           <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
             AirPods Pro 3
@@ -131,7 +138,10 @@ const Home = () => {
       </div>
       {/* 4 Grid col2 row3*/}
       <div className="w-full h-auto mb-3 grid grid-cols-1 min-[830px]:grid-cols-2 min-[830px]:grid-rows-[repeat(3,580px)] auto-rows-[500px] gap-[10px] min-[830px]:gap-[20px]">
-        <div className="w-full h-full mx-auto  bg-[url('/assets/image/global/10029.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div 
+          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
+          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10029.jpg")})` }}
+        >
           <div className="text-center pt-[20px] z-10">
             <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
               Apple Gift Card
@@ -165,7 +175,10 @@ const Home = () => {
           <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
-        <div className="w-full h-full mx-auto  bg-[url('/assets/image/global/10031.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div 
+          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
+          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10031.jpg")})` }}
+        >
           <div className="text-center pt-[20px] z-10">
             <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
               iPad Air
@@ -199,7 +212,10 @@ const Home = () => {
           <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
-        <div className="w-full h-full mx-auto  bg-[url('/assets/image/global/10032.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div 
+          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
+          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10032.jpg")})` }}
+        >
           <div className="text-center pt-[20px] z-10">
             <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
               Apple Watch Series 11
@@ -233,7 +249,10 @@ const Home = () => {
           <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
-        <div className="w-full h-full mx-auto  bg-[url('/assets/image/global/10033.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div 
+          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
+          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10033.jpg")})` }}
+        >
           <div className="text-center pt-[20px] z-10">
             <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
               Ipad
@@ -267,7 +286,10 @@ const Home = () => {
           <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
-        <div className="w-full h-full mx-auto  bg-[url('/assets/image/global/10036.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div 
+          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
+          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10036.jpg")})` }}
+        >
           <div className="text-center pt-[20px] z-10">
             <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
               Apple Trade In
@@ -301,7 +323,10 @@ const Home = () => {
           <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
-        <div className="w-full h-full mx-auto  bg-[url('/assets/image/global/10037.jpg')] bg-cover bg-center bg-no-repeat mb-3">
+        <div 
+          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
+          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10037.jpg")})` }}
+        >
           <div className="text-center pt-[20px] z-10">
             <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
               Apple Card

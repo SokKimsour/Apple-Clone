@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getAssetPath } from '../../utils/assets';
 
 const UnlockMac = () => {
     const [activeSection, setActiveSection] = useState(0);
@@ -7,17 +8,17 @@ const UnlockMac = () => {
         {
             title: "Mac and iPhone",
             description: "Answer calls or messages from your iPhone directly on your Mac. See and control what’s on your iPhone from your Mac with iPhone Mirroring. Use Universal Clipboard to copy images, video, or text from your iPhone, then paste into another app on your nearby Mac. And thanks to iCloud, you can access your files from either your iPhone or your Mac. And so much more.",
-            image: "/assets/image/global/unlock1.jpg"
+            image: "assets/image/global/unlock1.jpg"
         },
         {
             title: "Mac and iPad",
             description: "Sketch on your iPad and have it appear instantly on your Mac. Or use your iPad as a second display, so you can work on one screen while you reference the other. You can even start something on your iPad — like a presentation or an email — and continue it on your Mac.",
-            image: "/assets/image/global/unlock2.jpg"
+            image: "assets/image/global/unlock2.jpg"
         },
         {
             title: "Mac and Apple Watch",
             description: "Automatically log in to your Mac when you’re wearing your Apple Watch with Auto Unlock. No password typing required.",
-            image: "/assets/image/global/unlock3.jpg"
+            image: "assets/image/global/unlock3.jpg"
         }
     ];
 
@@ -70,7 +71,7 @@ const UnlockMac = () => {
                             {sections.map((section, index) => (
                                 <img
                                     key={index}
-                                    src={section.image}
+                                    src={getAssetPath(section.image)}
                                     alt={section.title}
                                     className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${activeSection === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                                 />

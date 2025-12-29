@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { getAssetPath } from "../../utils/assets";
 
 const EntertainmentSection = () => {
   const topScrollRef = useRef(null);
@@ -8,38 +9,38 @@ const EntertainmentSection = () => {
 
   // Hero images (top row)
   const heroImages = [
-    { src: "/assets/image/tv/10002.jpg", title: "Apple TV+", description: "Original series and movies" },
-    { src: "/assets/image/tv/10004.jpg", title: "Apple Music", description: "Stream your favorite songs" },
-    { src: "/assets/image/tv/10006.jpg", title: "Apple Arcade", description: "Unlimited games" },
-    { src: "/assets/image/tv/10002.jpg", title: "Apple TV+", description: "Original series and movies" },
-    { src: "/assets/image/tv/10004.jpg", title: "Apple Music", description: "Stream your favorite songs" },
-    { src: "/assets/image/tv/10006.jpg", title: "Apple Arcade", description: "Unlimited games" },
+    { src: "assets/image/whymac/tv/10002.jpg", title: "Apple TV+", description: "Original series and movies" },
+    { src: "assets/image/whymac/tv/10004.jpg", title: "Apple Music", description: "Stream your favorite songs" },
+    { src: "assets/image/whymac/tv/10006.jpg", title: "Apple Arcade", description: "Unlimited games" },
+    { src: "assets/image/whymac/tv/10002.jpg", title: "Apple TV+", description: "Original series and movies" },
+    { src: "assets/image/whymac/tv/10004.jpg", title: "Apple Music", description: "Stream your favorite songs" },
+    { src: "assets/image/whymac/tv/10006.jpg", title: "Apple Arcade", description: "Unlimited games" },
   ];
 
   // Mini cards (bottom row)
   const miniImages = [
-    { src: "/assets/image/tv/10021.jpg", label: "Watch now" },
-    { src: "/assets/image/tv/10022.jpg", label: "Stream now" },
-    { src: "/assets/image/tv/10043.jpg", label: "Play now" },
-    { src: "/assets/image/tv/10044.jpg", label: "Listen now" },
-    { src: "/assets/image/tv/10045.jpg", label: "Watch now" },
-    { src: "/assets/image/tv/10046.jpg", label: "Stream now" },
-    { src: "/assets/image/tv/10061.jpg", label: "Play now" },
-    { src: "/assets/image/tv/10063.jpg", label: "Listen now" },
-    { src: "/assets/image/tv/10065.jpg", label: "Watch now" },
-    { src: "/assets/image/tv/10066.jpg", label: "Stream now" },
-    { src: "/assets/image/tv/10081.jpg", label: "Play now" },
-    { src: "/assets/image/tv/10021.jpg", label: "Watch now" },
-    { src: "/assets/image/tv/10022.jpg", label: "Stream now" },
-    { src: "/assets/image/tv/10043.jpg", label: "Play now" },
-    { src: "/assets/image/tv/10044.jpg", label: "Listen now" },
-    { src: "/assets/image/tv/10045.jpg", label: "Watch now" },
-    { src: "/assets/image/tv/10046.jpg", label: "Stream now" },
-    { src: "/assets/image/tv/10061.jpg", label: "Play now" },
-    { src: "/assets/image/tv/10063.jpg", label: "Listen now" },
-    { src: "/assets/image/tv/10065.jpg", label: "Watch now" },
-    { src: "/assets/image/tv/10066.jpg", label: "Stream now" },
-    { src: "/assets/image/tv/10081.jpg", label: "Play now" },
+    { src: "assets/image/whymac/tv/10021.jpg", label: "Watch now" },
+    { src: "assets/image/whymac/tv/10022.jpg", label: "Stream now" },
+    { src: "assets/image/whymac/tv/10043.jpg", label: "Play now" },
+    { src: "assets/image/whymac/tv/10044.jpg", label: "Listen now" },
+    { src: "assets/image/whymac/tv/10045.jpg", label: "Watch now" },
+    { src: "assets/image/whymac/tv/10046.jpg", label: "Stream now" },
+    { src: "assets/image/whymac/tv/10061.jpg", label: "Play now" },
+    { src: "assets/image/whymac/tv/10063.jpg", label: "Listen now" },
+    { src: "assets/image/whymac/tv/10065.jpg", label: "Watch now" },
+    { src: "assets/image/whymac/tv/10066.jpg", label: "Stream now" },
+    { src: "assets/image/whymac/tv/10081.jpg", label: "Play now" },
+    { src: "assets/image/whymac/tv/10021.jpg", label: "Watch now" },
+    { src: "assets/image/whymac/tv/10022.jpg", label: "Stream now" },
+    { src: "assets/image/whymac/tv/10043.jpg", label: "Play now" },
+    { src: "assets/image/whymac/tv/10044.jpg", label: "Listen now" },
+    { src: "assets/image/whymac/tv/10045.jpg", label: "Watch now" },
+    { src: "assets/image/whymac/tv/10046.jpg", label: "Stream now" },
+    { src: "assets/image/whymac/tv/10061.jpg", label: "Play now" },
+    { src: "assets/image/whymac/tv/10063.jpg", label: "Listen now" },
+    { src: "assets/image/whymac/tv/10065.jpg", label: "Watch now" },
+    { src: "assets/image/whymac/tv/10066.jpg", label: "Stream now" },
+    { src: "assets/image/whymac/tv/10081.jpg", label: "Play now" },
   ];
 
   // Auto scroll
@@ -105,7 +106,7 @@ const EntertainmentSection = () => {
                        snap-start"
           >
             <img
-              src={item.src}
+              src={getAssetPath(item.src)}
               alt={item.title}
               className="w-full h-full object-cover"
             />
@@ -141,7 +142,7 @@ const EntertainmentSection = () => {
                        shadow-lg"
           >
             <img
-              src={item.src}
+              src={getAssetPath(item.src)}
               alt={item.label}
               className="w-full h-full object-cover"
             />

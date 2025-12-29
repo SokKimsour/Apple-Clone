@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { macData_menu } from "../data/mac";
+import { getAssetPath } from "../utils/assets";
 import MacShowProduct from "../components/common/MacShowProduct";
 import ShoppingFeature from "../components/common/ShoppingFeature";
 import WhyMac from "../components/common/WhyMac";
@@ -34,7 +35,7 @@ const Mac = () => {
                 >
                     {macData_menu.navigation_menu.map((item) => (
                         <div key={item.name} className="flex flex-col items-center justify-center min-w-[70px] md:min-w-auto shrink-0 md:shrink cursor-pointer hover:opacity-80 transition-opacity" >
-                            <img src={item.image} alt={item.name} className="w-10 h-10 md:w-auto md:h-auto" />
+                            <img src={getAssetPath(item.image)} alt={item.name} className="w-10 h-10 md:w-auto md:h-auto" />
                             <p className="text-[10px] md:text-[12px] whitespace-nowrap pt-2">{item.name}</p>
                         </div>
                     ))}
@@ -80,7 +81,7 @@ const Mac = () => {
                 Get Started
               </button>
                         </div>
-                        <img src="/assets/image/global/helpmechoose.png" alt="helpmechoose" className="w-full h-[300px] md:h-full object-cover p-5" />
+                        <img src={getAssetPath("assets/image/global/helpmechoose.png")} alt="helpmechoose" className="w-full h-[300px] md:h-full object-cover p-5" />
                     </div>
                 </div>
             </div>
@@ -95,9 +96,9 @@ const Mac = () => {
                                 <p className="text-[16px] ">With Apple Trade In, you can get a great value for your current device and apply it toward a new one. If your device isn’t eligible for credit, we’ll recycle it for free.</p>
                                 <p className="text-[16px] text-blue-500 ">See what your device is worth</p>
                             </div>
-                        
-                                <img src="/assets/image/global/switchtomac1.png" alt="switchtomac" className="w-full h-full object-cover" />
-                            
+                            <div className="w-full h-full bg-white">
+                                <img src={getAssetPath("assets/image/global/switchtomac1.png")} alt="switchtomac" className="w-full h-full object-cover" />
+                            </div>
                         </div>
                         <div className="grid grid-rows-[auto_1fr] md:grid-rows-2 rounded-2xl bg-white overflow-hidden min-h-[500px] md:min-h-0">
                             <div className="flex flex-col items-center justify-center gap-2 px-6 md:px-28 py-10 md:py-0 text-center">
@@ -106,11 +107,9 @@ const Mac = () => {
                                 <p className="text-[16px] text-blue-500 ">learn more</p>
                             </div>
                             <div className="w-full h-full bg-white">
-                                <img src="/assets/image/global/10003.png" alt="switchtomac" className="w-full h-full object-cover" />
+                                <img src={getAssetPath("assets/image/global/10003.png")} alt="switchtomac" className="w-full h-full object-cover" />
                             </div>
-                            
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -124,9 +123,9 @@ const Mac = () => {
                                 <p className="text-[16px] ">Explore keyboards, mice, and other essentials.</p>
                                 <p className="text-[16px] text-blue-500 ">Shop mac accessories</p>
                             </div>
-                        
-                                <img src="/assets/image/global/switchtomac1.png" alt="switchtomac" className="w-full h-full object-cover" />
-                            
+                            <div className="w-full h-full bg-white">
+                                <img src={getAssetPath("assets/image/global/switchtomac1.png")} alt="switchtomac" className="w-full h-full object-cover" />
+                            </div>
                         </div>
                         <div className="grid grid-rows-[auto_1fr] md:grid-rows-2 rounded-2xl bg-white overflow-hidden min-h-[500px] md:min-h-0">
                             <div className="flex flex-col items-center justify-center gap-2 px-6 md:px-28 py-10 md:py-0 text-center">
@@ -135,11 +134,9 @@ const Mac = () => {
                                 <p className="text-[16px] text-blue-500 ">learn more</p>
                             </div>
                             <div className="w-full h-full bg-white">
-                                <img src="/assets/image/global/10003.png" alt="switchtomac" className="w-full h-full object-cover" />
+                                <img src={getAssetPath("assets/image/global/10003.png")} alt="switchtomac" className="w-full h-full object-cover" />
                             </div>
-                            
                         </div>
-                        
                     </div>
                 </div>
             </div>
