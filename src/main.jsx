@@ -7,7 +7,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <BrowserRouter basename="/Apple-Clone">
+        <BrowserRouter basename="/apple-clone">
             <App />
         </BrowserRouter>
     </React.StrictMode>
