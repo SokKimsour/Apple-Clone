@@ -91,7 +91,7 @@ const Store = () => {
             <div className="relative overflow-hidden w-full h-[228px] flex justify-center items-center px-[148px]">
                 <div className="relative w-full  flex items-center justify-between px-4">
                     {/* Left */}
-                    <h1 className="text-[clamp(64px,8vw,80px)] font-bold  tracking-tight bg-gradient-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
+                    <h1 className="text-[clamp(64px,8vw,80px)] font-bold  tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
                         Store
                     </h1>
 
@@ -144,7 +144,7 @@ const Store = () => {
             <section className="w-full h-auto pb-[40px]">
                 <div className="w-full  h-auto px-[148px]">
                     <h2 className="text-[28px] font-semibold">
-                        <span className="tracking-tight bg-gradient-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
+                        <span className="tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
                             The latest.
                         </span>
                         <span className="text-[28px] text-gray-500">Truly awe-inspired gifts.</span>
@@ -187,7 +187,7 @@ const Store = () => {
                                         {item.name}
                                     </h3>
 
-                                    <p className="mt-1 text-[15px]tracking-tight bg-gradient-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent max-w-[80%]">
+                                    <p className="mt-1 text-[15px]tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent max-w-[80%]">
                                         {item.description}
                                     </p>
 
@@ -204,7 +204,7 @@ const Store = () => {
              <section className="w-full h-auto pb-[40px]">
                 <div className="w-full  h-auto px-[148px]">
                     <h2 className="text-[28px] font-semibold">
-                        <span className="tracking-tight bg-gradient-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
+                        <span className="tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent">
                             Personalization.
                         </span>
                         <span className="text-[28px] text-gray-500">Truly awe-inspired gifts.</span>
@@ -247,7 +247,7 @@ const Store = () => {
                                         {item.name}
                                     </h3>
 
-                                    <p className="mt-1 text-[15px]tracking-tight bg-gradient-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent max-w-[80%]">
+                                    <p className="mt-1 text-[15px]tracking-tight bg-linear-to-r from-[#0a84ff] via-[#5ac8fa] to-[#ff9f0a] bg-clip-text text-transparent max-w-[80%]">
                                         {item.description}
                                     </p>
 

@@ -166,3 +166,53 @@ Features: [
     }
   ]
 }
+export const whyMac = [
+  {
+    id: 1,
+    category: "Performance and Battery Life",
+    headline: "Go fast. Go far.",
+    image_alt: "User working with Mac outdoors at night"
+  },
+  {
+    id: 2,
+    category: "Built for AI",
+    headline: "Smart. Secure. On device.",
+    image_alt: "Futuristic helmet graphic on Mac display"
+  },
+  {
+    id: 3,
+    category: "macOS and Apple Intelligence",
+    headline: "Easy to use. Easy to love.",
+    image_alt: "macOS desktop with widgets and apps"
+  },
+  {
+    id: 4,
+    category: "Mac + iPhone",
+    headline: "Together they work wonders.",
+    image_alt: "iPhone and Mac ecosystem integration"
+  },
+  {
+    id: 5,
+    category: "Compatibility",
+    headline: "Mac runs your favorite apps.",
+    image_alt: "App icons including Word, Excel, Slack, and Zoom"
+  },
+  {
+    id: 6,
+    category: "Privacy and Security",
+    headline: "Your business is nobody else's.",
+    image_alt: "Apple logo padlock icon"
+  },
+  {
+    id: 7,
+    category: "Durability",
+    headline: "Built to stand the test of time.",
+    image_alt: "MacBook being placed into a bag"
+  },
+  {
+    id: 8,
+    category: "Apple Values",
+    headline: "Our values drive everything we do.",
+    image_alt: "Planet Earth from space"
+  }
+];
