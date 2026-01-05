@@ -44,47 +44,47 @@ const EntertainmentSection = () => {
   ];
 
   // Auto scroll
-  // Auto scroll
   useEffect(() => {
     const interval = setInterval(() => {
       // Top row
       if (topScrollRef.current) {
-        topScrollAccumulator.current += 0.6;
+        topScrollAccumulator.current += 1; // Slightly faster
         if (topScrollAccumulator.current >= 1) {
           const pixels = Math.floor(topScrollAccumulator.current);
           topScrollAccumulator.current -= pixels;
           topScrollRef.current.scrollLeft += pixels;
 
+          // Infinite scroll logic check
           const maxScroll = topScrollRef.current.scrollWidth / 2;
-          if (topScrollRef.current.scrollLeft >= maxScroll) {
-            topScrollRef.current.scrollLeft -= maxScroll;
+          if (topScrollRef.current.scrollLeft >= maxScroll - 10) {
+             topScrollRef.current.scrollLeft = 0;
           }
         }
       }
 
       // Bottom row
       if (bottomScrollRef.current) {
-        bottomScrollAccumulator.current += 0.4;
+        bottomScrollAccumulator.current += 0.8;
         if (bottomScrollAccumulator.current >= 1) {
           const pixels = Math.floor(bottomScrollAccumulator.current);
           bottomScrollAccumulator.current -= pixels;
           bottomScrollRef.current.scrollLeft += pixels;
 
           const maxScroll = bottomScrollRef.current.scrollWidth / 2;
-          if (bottomScrollRef.current.scrollLeft >= maxScroll) {
-            bottomScrollRef.current.scrollLeft -= maxScroll;
+          if (bottomScrollRef.current.scrollLeft >= maxScroll - 10) {
+             bottomScrollRef.current.scrollLeft = 0;
           }
         }
       }
-    }, 16);
+    }, 20);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="bg-[#f5f5f7] py-10 min-[830px]:py-24 overflow-hidden">
+    <section className="bg-[#f5f5f7] py-10 md:py-24 overflow-hidden">
       {/* Title */}
-      <h2 className="text-center text-2xl min-[830px]:text-5xl font-semibold mb-8 min-[830px]:mb-16 py-[20px] min-[830px]:py-[40px]">
+      <h2 className="text-center text-3xl md:text-5xl font-semibold mb-8 md:mb-16 py-5 md:py-10">
         Endless entertainment.
       </h2>
 
@@ -92,18 +92,19 @@ const EntertainmentSection = () => {
       <div
         ref={topScrollRef}
         className="w-full overflow-x-auto scrollbar-hide
-                   flex gap-[20px] px-4 min-[830px]:px-24 pb-[20px]
+                   flex gap-5 px-4 md:px-24 pb-5
                    cursor-grab active:cursor-grabbing"
       >
         {heroImages.map((item, index) => (
           <div
             key={index}
             className="group relative
-                       min-w-[300px] h-[200px] min-[830px]:min-w-[1250px] min-[830px]:h-[700px]
+                       min-w-[300px] h-[180px] md:min-w-[900px] lg:min-w-[1100px] md:h-[600px]
                        shrink-0
                        overflow-hidden
                        shadow-xl
-                       snap-start"
+                       snap-start
+                       rounded-2xl"
           >
             <img
               src={getAssetPath(item.src)}
@@ -111,14 +112,14 @@ const EntertainmentSection = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
-            <div className="absolute bottom-4 left-4 min-[830px]:bottom-8 min-[830px]:left-8 text-white">
-              <h3 className="text-lg min-[830px]:text-2xl font-medium mb-1">{item.title}</h3>
-              <p className="text-xs min-[830px]:text-sm opacity-90">{item.description}</p>
+            <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 text-white">
+              <h3 className="text-lg md:text-2xl font-medium mb-1">{item.title}</h3>
+              <p className="text-xs md:text-sm opacity-90">{item.description}</p>
             </div>
 
-            <button className="absolute bottom-4 right-4 min-[830px]:bottom-8 min-[830px]:right-8 bg-white text-black px-5 py-3 min-[830px]:px-6 min-[830px]:py-4 rounded-full text-xs min-[830px]:text-sm font-medium shadow">
+            <button className="absolute bottom-4 right-4 md:bottom-8 md:right-8 bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-medium shadow hover:bg-gray-100 transition">
               Explore
             </button>
           </div>
@@ -129,25 +130,26 @@ const EntertainmentSection = () => {
       <div
         ref={bottomScrollRef}
         className="w-full overflow-x-auto scrollbar-hide
-                   flex gap-[20px] px-4 min-[830px]:px-24 py-5 min-[830px]:py-10
+                   flex gap-5 px-4 md:px-24 py-5 md:py-10
                    cursor-grab active:cursor-grabbing"
       >
         {miniImages.map((item, index) => (
           <div
             key={index}
             className="group relative
-                       min-w-[200px] h-[120px] min-[830px]:min-w-[470px] min-[830px]:h-[260px]
+                       min-w-[200px] h-[120px] md:min-w-[400px] md:h-[225px]
                        shrink-0
                        overflow-hidden
-                       shadow-lg"
+                       shadow-lg
+                       rounded-xl"
           >
             <img
               src={getAssetPath(item.src)}
               alt={item.label}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
-            <button className="absolute bottom-3 left-3 min-[830px]:bottom-5 min-[830px]:left-5 bg-white text-black px-5 py-3 min-[830px]:px-4 min-[830px]:py-1.5 rounded-full text-[10px] min-[830px]:text-xs font-medium">
+            <button className="absolute bottom-3 left-3 md:bottom-5 md:left-5 bg-white text-black px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[10px] md:text-xs font-medium shadow hover:scale-105 transition">
               {item.label}
             </button>
           </div>

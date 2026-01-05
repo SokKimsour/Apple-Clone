@@ -1,6 +1,7 @@
 import React from "react";
 import EntertainmentSection from "../components/common/EntertainmentSection";
 import { getAssetPath } from "../assets";
+
 const productSections = [
   {
     name: "iPad Pro",
@@ -26,7 +27,7 @@ const Home = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div className="relative w-full h-[600px] overflow-hidden bg-white mb-3">
+      <div className="relative w-full h-[500px] md:h-[calc(100vh-44px)] max-h-[850px] overflow-hidden bg-white mb-3">
         <video
           src={getAssetPath("assets/video/largetall_2x.mp4")}
           autoPlay
@@ -35,24 +36,24 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="relative z-10 flex flex-col items-center text-center pt-[40px] px-6">
-          <h1 className="text-[32px] min-[830px]:text-[60px] leading-tight text-black/90 mb-2 tracking-tight">
+        <div className="relative z-10 flex flex-col items-center text-center pt-16 md:pt-[55px] px-6">
+          <h1 className="text-4xl md:text-[56px] lg:text-[64px] leading-[1.05] font-semibold text-black/90 mb-2 tracking-tight">
             Wrapping up this special season.
           </h1>
 
-          <p className="text-[22px] min-[830px]:text-[24px] font-light text-black/80 mb-2 max-w-[600px]">
+          <p className="text-xl md:text-[28px] leading-tight font-normal text-black/90 mb-4 max-w-[600px]">
             There’s still time to make their holiday one of a kind.
           </p>
 
           <button
             className="
               inline-flex items-center justify-center
-              px-[18px] py-[8px]
+              px-5 py-2
               bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
+              text-white text-[17px]
               rounded-full
               transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40
+              focus:outline-none focus:ring-2 focus:ring-[#0071e3]/40
             "
           >
             Shop gifts
@@ -60,308 +61,199 @@ const Home = () => {
         </div>
       </div>
 
-      {/* 2*/}
-      <div 
-        className="w-full h-[697px] mx-auto bg-cover bg-center bg-no-repeat mb-3"
+      {/* 2 - iPhone */}
+      <div
+        className="w-full h-[500px] md:h-[690px] mx-auto bg-cover bg-bottom md:bg-center bg-no-repeat mb-3 relative"
         style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10025.jpg")})` }}
       >
-        <div className="text-center pt-[20px] z-10">
-          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
+        <div className="text-center pt-12 md:pt-[53px] px-6 z-10">
+          <h2 className="text-3xl md:text-[56px] font-semibold tracking-tight text-white md:text-black mb-2 leading-tight">
             iPhone
-          </h1>
-          <p className="text-2xl font-normal text-black/90 mb-[15px]">
+          </h2>
+          <p className="text-xl md:text-[28px] font-normal text-white md:text-black mb-4 leading-tight">
             Say hello to the latest generation of iPhone.
           </p>
-          <div className=" flex gap-[18px] justify-center">
+          <div className="flex gap-4 justify-center">
             <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
+              px-5 py-2
               bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
+              text-white text-[17px]
               rounded-full
               transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+              focus:outline-none focus:ring-2 focus:ring-[#0071e3]/40">
               Learn more
             </button>
             <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
+              px-5 py-2
+              hover:bg-[#0077ed]/10
+              text-[#0071e3] text-[17px]
               rounded-full
               transition-colors duration-200
-              border border-[#0071e3]">
+              border border-[#0071e3]
+              bg-transparent">
               Shop iPhone
             </button>
           </div>
         </div>
-
-
-        <div className="mt-auto w-full flex justify-center">
-        </div>
       </div>
-      {/* 3*/}
-      <div 
-        className="w-full h-[697px] mx-auto bg-cover bg-center bg-no-repeat mb-3"
+
+      {/* 3 - AirPods */}
+      <div
+        className="w-full h-[500px] md:h-[690px] mx-auto bg-cover bg-bottom md:bg-center bg-no-repeat mb-3 relative"
         style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10026.jpg")})` }}
       >
-        <div className="text-center pt-[20px] z-10">
-          <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
+        <div className="text-center pt-12 md:pt-[53px] px-6 z-10 w-full absolute top-0 left-0 right-0">
+          <h2 className="text-3xl md:text-[56px] font-semibold tracking-tight text-white mb-2 leading-tight">
             AirPods Pro 3
-          </h1>
-          <p className="text-2xl font-normal text-black/90 mb-[15px]">
+          </h2>
+          <p className="text-xl md:text-[28px] font-normal text-white mb-4 leading-tight">
             The world’s best in-ear Active Noise Cancellation.
           </p>
-          <div className=" flex gap-[18px] justify-center">
+          <div className="flex gap-4 justify-center">
             <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
+              px-5 py-2
               bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
+              text-white text-[17px]
               rounded-full
               transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
+              focus:outline-none focus:ring-2 focus:ring-[#0071e3]/40">
               Learn more
             </button>
             <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
+              px-5 py-2
+              hover:bg-[#0077ed]
+              text-[#0071e3] text-[17px]
               rounded-full
               transition-colors duration-200
-              border border-[#0071e3]">
+              border border-[#0071e3]
+              bg-transparent">
               Buy
             </button>
           </div>
         </div>
-
-
-        <div className="mt-auto w-full flex justify-center">
-        </div>
       </div>
-      {/* 4 Grid col2 row3*/}
-      <div className="w-full h-auto mb-3 grid grid-cols-1 min-[830px]:grid-cols-2 min-[830px]:grid-rows-[repeat(3,580px)] auto-rows-[500px] gap-[10px] min-[830px]:gap-[20px]">
-        <div 
-          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
-          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10029.jpg")})` }}
-        >
-          <div className="text-center pt-[20px] z-10">
-            <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
-              Apple Gift Card
-            </h1>
-            <p className="text-2xl font-normal text-black/90 mb-[15px]">
-              Let them spend the holidays however they like.
-            </p>
-            <div className=" flex gap-[18px] justify-center">
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-                Learn more
-              </button>
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-                Buy
-              </button>
+
+      {/* Grid Section */}
+      <div className="w-full px-3 md:px-0 mb-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-3">
+          
+          {/* Card 1 - Gift Card */}
+          <div
+            className="w-full h-[500px] md:h-[580px] bg-cover bg-center bg-no-repeat relative group overflow-hidden"
+            style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10029.jpg")})` }}
+          >
+            <div className="text-center pt-8 md:pt-[53px] px-6">
+              <h3 className="text-3xl md:text-[40px] font-semibold tracking-tight text-black mb-2 leading-tight">
+                Apple Gift Card
+              </h3>
+              <p className="text-lg md:text-[21px] font-normal text-black/90 mb-4 leading-tight">
+                Let them spend the holidays however they like.
+              </p>
+              <div className="flex gap-4 justify-center">
+                <button className="text-[#0066cc] hover:underline text-[17px]">Learn more &gt;</button>
+                <button className="text-[#0066cc] hover:underline text-[17px]">Buy &gt;</button>
+              </div>
             </div>
           </div>
 
-
-          <div className="mt-auto w-full flex justify-center">
-          </div>
-        </div>
-        <div 
-          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
-          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10031.jpg")})` }}
-        >
-          <div className="text-center pt-[20px] z-10">
-            <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
-              iPad Air
-            </h1>
-            <p className="text-2xl font-normal text-black/90 mb-[15px]">
-              Now supercharged by the M3 chip.
-            </p>
-            <div className=" flex gap-[18px] justify-center">
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-                Learn more
-              </button>
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-                Buy
-              </button>
+          {/* Card 2 - iPad Air */}
+          <div
+            className="w-full h-[500px] md:h-[580px] bg-cover bg-center bg-no-repeat relative group overflow-hidden"
+            style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10031.jpg")})` }}
+          >
+            <div className="text-center pt-8 md:pt-[53px] px-6">
+              <h3 className="text-3xl md:text-[40px] font-semibold tracking-tight text-white md:text-black mb-2 leading-tight">
+                iPad Air
+              </h3>
+              <p className="text-lg md:text-[21px] font-normal text-white md:text-black/90 mb-4 leading-tight">
+                Now supercharged by the M3 chip.
+              </p>
+              <div className="flex gap-4 justify-center">
+                <button className="text-[#0066cc] hover:underline text-[17px]">Learn more &gt;</button>
+                <button className="text-[#0066cc] hover:underline text-[17px]">Buy &gt;</button>
+              </div>
             </div>
           </div>
 
-
-          <div className="mt-auto w-full flex justify-center">
-          </div>
-        </div>
-        <div 
-          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
-          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10032.jpg")})` }}
-        >
-          <div className="text-center pt-[20px] z-10">
-            <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
-              Apple Watch Series 11
-            </h1>
-            <p className="text-2xl font-normal text-black/90 mb-[15px]">
-              The ultimate way to watch your health.
-            </p>
-            <div className=" flex gap-[18px] justify-center">
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-                Learn more
-              </button>
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-                Buy
-              </button>
+          {/* Card 3 - Watch */}
+          <div
+            className="w-full h-[500px] md:h-[580px] bg-cover bg-center bg-no-repeat relative group overflow-hidden"
+            style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10032.jpg")})` }}
+          >
+            <div className="text-center pt-8 md:pt-[53px] px-6">
+              <h3 className="text-3xl md:text-[40px] font-semibold tracking-tight text-white mb-2 leading-tight">
+                Apple Watch Series 11
+              </h3>
+              <p className="text-lg md:text-[21px] font-normal text-white mb-4 leading-tight">
+                The ultimate way to watch your health.
+              </p>
+              <div className="flex gap-4 justify-center">
+                <button className="text-[#0066cc] hover:underline text-[17px]">Learn more &gt;</button>
+                <button className="text-[#0066cc] hover:underline text-[17px]">Buy &gt;</button>
+              </div>
             </div>
           </div>
 
-
-          <div className="mt-auto w-full flex justify-center">
-          </div>
-        </div>
-        <div 
-          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
-          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10033.jpg")})` }}
-        >
-          <div className="text-center pt-[20px] z-10">
-            <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
-              Ipad
-            </h1>
-            <p className="text-2xl font-normal text-black/90 mb-[15px]">
-              Now with the speed of the A16 chip and double the starting storage.
-            </p>
-            <div className=" flex gap-[18px] justify-center">
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-                Learn more
-              </button>
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-                Buy
-              </button>
+          {/* Card 4 - iPad */}
+          <div
+            className="w-full h-[500px] md:h-[580px] bg-cover bg-center bg-no-repeat relative group overflow-hidden"
+            style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10033.jpg")})` }}
+          >
+            <div className="text-center pt-8 md:pt-[53px] px-6">
+              <h3 className="text-3xl md:text-[40px] font-semibold tracking-tight text-black mb-2 leading-tight">
+                iPad
+              </h3>
+              <p className="text-lg md:text-[21px] font-normal text-black/90 mb-4 leading-tight max-w-[300px] mx-auto">
+                Now with the speed of the A16 chip.
+              </p>
+              <div className="flex gap-4 justify-center">
+                <button className="text-[#0066cc] hover:underline text-[17px]">Learn more &gt;</button>
+                <button className="text-[#0066cc] hover:underline text-[17px]">Buy &gt;</button>
+              </div>
             </div>
           </div>
 
-
-          <div className="mt-auto w-full flex justify-center">
-          </div>
-        </div>
-        <div 
-          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
-          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10036.jpg")})` }}
-        >
-          <div className="text-center pt-[20px] z-10">
-            <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
-              Apple Trade In
-            </h1>
-            <p className="text-2xl font-normal text-black/90 mb-[15px]">
-              Get up to $180–$670 in credit when you trade in iPhone 13 or higher.
-            </p>
-            <div className=" flex gap-[18px] justify-center">
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-                Learn more
-              </button>
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-                Buy
-              </button>
+          {/* Card 5 - Trade In */}
+          <div
+            className="w-full h-[500px] md:h-[580px] bg-cover bg-center bg-no-repeat relative group overflow-hidden"
+            style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10036.jpg")})` }}
+          >
+            <div className="text-center pt-8 md:pt-[53px] px-6">
+              <h3 className="text-3xl md:text-[40px] font-semibold tracking-tight text-black mb-2 leading-tight">
+                Apple Trade In
+              </h3>
+              <p className="text-lg md:text-[21px] font-normal text-black/90 mb-4 leading-tight max-w-[320px] mx-auto">
+                Get up to $180–$670 in credit when you trade in iPhone 13 or higher.
+              </p>
+              <div className="flex gap-4 justify-center">
+                <button className="text-[#0066cc] hover:underline text-[17px]">Learn more &gt;</button>
+                <button className="text-[#0066cc] hover:underline text-[17px]">Buy &gt;</button>
+              </div>
             </div>
           </div>
 
-
-          <div className="mt-auto w-full flex justify-center">
-          </div>
-        </div>
-        <div 
-          className="w-full h-full mx-auto bg-cover bg-center bg-no-repeat mb-3"
-          style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10037.jpg")})` }}
-        >
-          <div className="text-center pt-[20px] z-10">
-            <h1 className="text-3xl min-[830px]:text-[50px] font-semibold tracking-tight text-black mb-8">
-              Apple Card
-            </h1>
-            <p className="text-2xl font-normal text-black/90 mb-[15px]">
-              Get up to 3% Daily Cash back with every purchase.
-            </p>
-            <div className=" flex gap-[18px] justify-center">
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-              bg-[#0071e3] hover:bg-[#0077ed]
-              text-white text-[15px]
-              rounded-full
-              transition-colors duration-200
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0071e3]/40">
-                Learn more
-              </button>
-              <button className="inline-flex items-center justify-center
-              px-[18px] py-[8px]
-            hover:bg-[#0077ed]
-              text-[#0071e3] text-[15px]
-              rounded-full
-              transition-colors duration-200
-              border border-[#0071e3]">
-                Buy
-              </button>
+          {/* Card 6 - Apple Card */}
+          <div
+            className="w-full h-[500px] md:h-[580px] bg-cover bg-center bg-no-repeat relative group overflow-hidden"
+            style={{ backgroundImage: `url(${getAssetPath("assets/image/global/10037.jpg")})` }}
+          >
+            <div className="text-center pt-8 md:pt-[53px] px-6">
+              <h3 className="text-3xl md:text-[40px] font-semibold tracking-tight text-black mb-2 leading-tight">
+                Apple Card
+              </h3>
+              <p className="text-lg md:text-[21px] font-normal text-black/90 mb-4 leading-tight">
+                Get up to 3% Daily Cash back with every purchase.
+              </p>
+              <div className="flex gap-4 justify-center">
+                <button className="text-[#0066cc] hover:underline text-[17px]">Learn more &gt;</button>
+                <button className="text-[#0066cc] hover:underline text-[17px]">Buy &gt;</button>
+              </div>
             </div>
-          </div>
-
-
-          <div className="mt-auto w-full flex justify-center">
           </div>
         </div>
       </div>
-      {/* SLide */}
+
+      {/* Slide */}
       <div className="w-full h-auto mb-3 ">
         <EntertainmentSection />
       </div>

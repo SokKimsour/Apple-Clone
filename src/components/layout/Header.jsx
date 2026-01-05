@@ -21,7 +21,8 @@ const Header = () => {
   // Handle resize to close menu on desktop
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 830) {
+      // 768px is standard tablet/desktop split (md)
+      if (window.innerWidth >= 768) {
         setIsMobileMenuOpen(false);
       }
     };
@@ -33,7 +34,7 @@ const Header = () => {
   return (
     <>
       <header className="h-[44px] fixed top-0 z-50 w-full bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
-        <nav className="mx-auto flex items-center justify-between h-full max-w-[980px] px-4 text-black relative z-[60]">
+        <nav className="mx-auto flex items-center justify-between h-full max-w-screen-xl px-4 lg:px-6 text-black relative z-[60]">
 
           {/* Left Icon (Logo) */}
           <NavLink to="/" className="flex items-center justify-center z-[60]" onClick={() => setIsMobileMenuOpen(false)}>
@@ -43,7 +44,7 @@ const Header = () => {
           </NavLink>
 
           {/* Center Nav Items (Desktop) */}
-          <ul className="hidden min-[830px]:flex flex-1 justify-between list-none px-8">
+          <ul className="hidden md:flex flex-1 justify-between list-none px-8">
             {navItems.map((item) => (
               <li key={item} className="group flex items-center h-full">
                 <NavLink
@@ -136,9 +137,9 @@ const Header = () => {
           </ul>
 
           {/* Right Icons */}
-          <div className="flex items-center gap-4 min-[830px]:gap-8 z-[60]">
+          <div className="flex items-center gap-4 md:gap-8 z-[60]">
             {/* Search */}
-            <div className="hidden min-[830px]:block">
+            <div className="hidden md:block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="44px"
@@ -164,7 +165,7 @@ const Header = () => {
 
             {/* Burger Menu (Mobile Only) */}
             <button
-              className="min-[830px]:hidden flex flex-col justify-center gap-[5px] w-[40px] h-[40px] cursor-pointer z-[60]"
+              className="md:hidden flex flex-col justify-center gap-[5px] w-[40px] h-[40px] cursor-pointer z-[60]"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <span
