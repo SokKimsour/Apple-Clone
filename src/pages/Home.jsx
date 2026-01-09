@@ -250,6 +250,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+           <div className="w-full h-auto mb-3 ">Learn More</div>
         </div>
       </div>
 
@@ -258,6 +259,8 @@ const Home = () => {
         <EntertainmentSection />
       </div>
     </div>
+
+
   );
 };
 
